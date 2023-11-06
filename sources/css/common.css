@@ -19,6 +19,7 @@ input{border-radius: 0;}
 .f_gmarket{font-family: 'Montserrat', sans-serif;}
 
 /*컨텐츠 가이드라인*/
+.container {padding-left: 60px; padding-right: 60px;}
 .wrapper{width: 1400px; max-width: 100%; margin: 0 auto;}
 
 /*clearfix*/
@@ -87,3 +88,5 @@ i.left{transform: rotate(135deg); -webkit-transform: rotate(135deg); -moz-transf
 
 /* Sound Only (Hidden Text) */
 .sound_only {position: absolute; left: 0; top: 0; width: 0; height: 0; font-size: 0; line-height: 0;}
+
+fieldset {border: none;}
