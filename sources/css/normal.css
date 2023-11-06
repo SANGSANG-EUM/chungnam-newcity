@@ -2,9 +2,14 @@
   --main-color: #089496;
 }
 
+.f_color1 {color: var(--main-color);}
+
+.swiper-container.ov-hidden {overflow: hidden;}
+
 /* Header */
 #header {height: 100px; background-color: lightcoral;}
-#header .container {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; height: 100%;}
+#header .container {height: 100%;}
+#header .inner {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; height: 100%;}
 
 .hd_logo {}
 .hd_logo > a {display: block; width: 280px;}
@@ -33,3 +38,54 @@
 .all_menu-btn span {display: inline-block; width: 18px; height: 3px; background-color: #333;}
 .all_menu-btn span:before {content: ""; display: block; position: absolute; top: 0; left: 0; z-index: 1; width: 100%; height: 3px; background-color: #333;}
 .all_menu-btn span:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; z-index: 1; width: 100%; height: 3px; background-color: #333;}
+
+/* Main */
+.main_sec {margin-top: 140px;}
+
+.main-titleBox {position: relative;}
+.main-title {font-size: 40px; font-weight: 300; color: #0f0f0f; line-height: normal;}
+.main-title b {font-weight: 700;}
+.main-expl {font-size: 20px; font-weight: 500; color: #333; line-height: 1.6;}
+.main-more {display: flex; flex-flow: row wrap; align-items: center; gap: 27px; position: absolute; top: 50%; right: 0; z-index: 10; transform: translateY(-50%);}
+.main-more .txt {font-size: 16px; font-weight: 500; color: #333;}
+.main-more .sym {display: block; position: relative;}
+.main-more .sym:before {content: ""; display: block; position: relative; width: 60px; height: 60px; border-radius: 50%; background: rgb(255,230,60); background: linear-gradient(130deg, rgba(255,230,60,1) 0%, rgba(8,148,150,1) 100%); opacity: 0.1;}
+.main-more .sym:after {content: ""; display: block; position: absolute; top: 50%; left: -17px; z-index: 5; width: 49px; height: 16px; margin-top: -8px; background: url('../images/more-arrow.png') no-repeat center/contain;}
+
+.main_vs {margin-top: 0; background: url('../images/main_vs-bg.jpg') no-repeat top -100px center;}
+.main_vs .inner {display: flex; flex-flow: row wrap;}
+.main_vs_lt {position: relative; width: 50%; padding: 66px 0 116px 30px;}
+.main_vs_rt {width: 50%; padding: 140px 10px 0;}
+.main_vs-map {position: relative; z-index: 5; width: 508px;}
+.main_vs-info {display: flex; flex-flow: row wrap; align-items: flex-start; position: absolute; top: 696px; left: -100px; z-index: 10;}
+.main_vs-info .icon {width: 18px;}
+.main_vs-info .txt {margin-left: 7px; font-size: 16px; font-weight: 500; color: var(--main-color);}
+.main_vs-info .txt b {font-weight: 800;}
+.main_vs-person {position: absolute; top: 503px; left: 390px; z-index: 1; width: 52px;}
+
+.main_vs-txtBox {}
+.main_vs-txtBox .txt1 {font-size: 80px; font-weight: 700; color: #0f0f0f; line-height: normal; letter-spacing: -2.5px;}
+.main_vs-txtBox .txt2 {margin-top: 30px; font-size: 20px; font-weight: 500; color: #333; line-height: 1.6;}
+
+.main_vs-build {margin-top: 90px;}
+.build_category {margin-top: 30px;}
+.build_category_ul {display: flex; flex-flow: row wrap; gap: 14px;}
+.build_category_ul > li {}
+.build-btn {display: flex; flex-flow: column wrap; align-items: center; justify-content: center; width: 100px; height: 100px; border: none; border-radius: 10px; background-color: #afcccc;}
+.build-btn .icon {display: block; width: 30px;}
+.build-btn .txt {display: block; margin-top: 10px; font-size: 18px; font-weight: 600; color: #fff; line-height: 1;}
+.build_category_ul > li.active .build-btn {background-color: #089496; box-shadow: 10px 0 25px rgba(4,0,0,0.15);}
+
+.city_build-count {position: relative; z-index: 1; margin-top: 55px; padding-left: 40px; font-size: 20px; font-weight: 400; color: #0f0f0f;}
+.city_build-count:before {content: ""; display: block; position: absolute; top: -24px; left: 0; z-index: -1; width: 73px; height: 46px; background: url('../images/double-quotes.png') no-repeat center/contain; opacity: 0.1;}
+.city_build-count b {font-weight: 700;}
+
+.city_person-count {display: flex; flex-flow: row wrap; align-items: center; justify-content: flex-start; margin-top: 50px;}
+.city_person-count .txtBox:not(:first-child) {margin-left: 22px; padding-left: 22px; border-left: 1px dashed #cecece;}
+.city_person-count .txt1 {font-size: 22px; font-weight: 500; color: #000; line-height: normal;}
+.city_person-count .txt1 b {font-weight: 700;}
+.city_person-count .txt2 {font-size: 28px; font-weight: 800; color: #0b6b6c; line-height: normal;}
+.city_person-count .txt3 {font-size: 16px; font-weight: 400; color: #666; line-height: normal;}
+
+.main_plan-slider .swiper-slide {text-align: center;}
+.main_plan-thumb {overflow: hidden; width: 220px; height: 220px; margin: 0 auto; border: 10px solid #e6f4f4; border-radius: 50%;}

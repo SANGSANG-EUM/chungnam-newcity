@@ -16,7 +16,7 @@ input{border-radius: 0;}
 
 /*폰트 설정 class*/
 .f_pret{font-family: 'Pretendard', sans-serif;}
-.f_gmarket{font-family: 'Montserrat', sans-serif;}
+.f_gmarket{font-family: 'GmarketSans', sans-serif; letter-spacing: -1px;}
 
 /*컨텐츠 가이드라인*/
 .container {padding-left: 60px; padding-right: 60px;}

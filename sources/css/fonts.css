@@ -67,13 +67,6 @@
 /*Gmarket Sans*/
 @font-face {
 	font-family: 'GmarketSans';
-	font-weight: 900;
-	font-display: swap;
-	src: local('GmarketSansTTFLight'), url('../fonts/GmarketSansTTFLight.ttf') format('woff2'), url('../fonts/GmarketSansTTFLight.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'GmarketSans';
 	font-weight: 300;
 	font-display: swap;
 	src: local('GmarketSansTTFLight'), url('../fonts/GmarketSansTTFLight.ttf') format('woff2'), url('../fonts/GmarketSansTTFLight.ttf') format('truetype');

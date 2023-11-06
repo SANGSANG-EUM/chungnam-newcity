@@ -7,14 +7,12 @@
 
     <!-- JS 파일 연결 -->
     <script src="../sources/js/jquery-3.6.0.min.js"></script>
-    <!-- Plug-in, Library { -->
-    <script src="../sources/plugin/slick/slick.min.js"></script>
-    <!-- } Plug-in, Library -->
+    <script src="../sources/plugin/swiper/swiper-bundle.min.js"></script>
     <script src="../sources/js/normal.js"></script>
+
+    
     <!-- CSS 파일 연결 -->
-    <!-- Plug-in, Library { -->
-    <link rel="stylesheet" href="../sources/plugin/slick/slick.css">
-    <!-- } Plug-in, Library -->
+    <link rel="stylesheet" href="../sources/plugin/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="../sources/css/fonts.css">
     <link rel="stylesheet" href="../sources/css/common.css">
     <link rel="stylesheet" href="../sources/css/normal.css">
@@ -28,56 +26,239 @@
     <!-- Header { -->
     <div id="header">
       <div class="container">
-        <h1 class="hd_logo">
-          <a href="">
-            <img src="../sources/images/logo.png" alt="충청남도내포신도시">
-          </a>
-        </h1>
-        <nav class="gnb">
-          <ul class="gnb_ul-dp1">
-            <li>
-              <a href="">충남혁신도시 소개</a>
-            </li>
-            <li>
-              <a href="">정보공개</a>
-            </li>
-            <li>
-              <a href="">소식알림</a>
-            </li>
-            <li>
-              <a href="">소통/참여</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="hd_rnb">
-          <div class="hd_search">
-            <form action="">
-              <fieldset>
-                <legend class="sound_only">전체검색메뉴</legend>
-                <input type="text" class="hd_search-keyword" placeholder="검색어를 입력하세요.">
-                <button type="submit" class="hd_search-submit" title="검색하기"></button>
-              </fieldset>
-            </form>
-          </div>
-          <div class="mb_nav">
-            <ul class="mb_nav_ul">
+        <div class="inner">
+          <h1 class="hd_logo">
+            <a href="">
+              <img src="../sources/images/logo.png" alt="충청남도내포신도시">
+            </a>
+          </h1>
+          <nav class="gnb">
+            <ul class="gnb_ul-dp1">
               <li>
-                <a href="">로그인</a>
+                <a href="">충남혁신도시 소개</a>
               </li>
               <li>
-                <a href="">회원가입</a>
+                <a href="">정보공개</a>
+              </li>
+              <li>
+                <a href="">소식알림</a>
+              </li>
+              <li>
+                <a href="">소통/참여</a>
               </li>
             </ul>
+          </nav>
+          <div class="hd_rnb">
+            <div class="hd_search">
+              <form action="">
+                <fieldset>
+                  <legend class="sound_only">전체검색메뉴</legend>
+                  <input type="text" class="hd_search-keyword" placeholder="검색어를 입력하세요.">
+                  <button type="submit" class="hd_search-submit" title="검색하기"></button>
+                </fieldset>
+              </form>
+            </div>
+            <div class="mb_nav">
+              <ul class="mb_nav_ul">
+                <li>
+                  <a href="">로그인</a>
+                </li>
+                <li>
+                  <a href="">회원가입</a>
+                </li>
+              </ul>
+            </div>
+            <a href="" class="chungnam_page-link">
+              <img src="../sources/images/chungnam-logo.png" alt="새창열림, 충청남도 홈페이지로 이동">
+            </a>
+            <button type="button" class="all_menu-btn">
+              <span></span>
+            </button>
           </div>
-          <a href="" class="chungnam_page-link">
-            <img src="../sources/images/chungnam-logo.png" alt="새창열림, 충청남도 홈페이지로 이동">
-          </a>
-          <button type="button" class="all_menu-btn">
-            <span></span>
-          </button>
         </div>
       </div>
     </div>
     <!-- } Header -->
+
+    <!-- Contents (Main) { -->
+    <div class="contentsWrap main">
+
+      <div class="main_sec main_vs">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="main_vs_lt">
+                <div class="main_vs-map">
+                  <img src="../sources/images/main_vs-map.png" alt="조성현황 지도">
+                </div>
+                <div class="main_vs-info">
+                  <span class="icon">
+                    <img src="../sources/images/pin-icon.png" alt="">
+                  </span>
+                  <p class="txt">
+                    우측의 버튼을 선택하시면, <br/>
+                    <b>충남혁신도시의 현황을 <br/>
+                    한눈에</b> 알 수 있습니다.
+                  </p>
+                </div>
+                <div class="main_vs-person">
+                  <img src="../sources/images/main_vs-person.png" alt="">
+                </div>
+              </div>
+              <div class="main_vs_rt">
+                <div class="main_vs-txtBox">
+                  <p class="f_gmarket txt1">내 삶을 바꾸는 도시, 충남혁신도시</p>
+                  <p class="f_gmarket txt2">도청이전신도시, 내포신도시가 국가균형 발전을 선도하는 <br/>충남혁신도시로 새롭게 거듭납니다.</p>
+                </div>
+                <div class="main_vs-build">
+                  <div class="main-titleBox">
+                    <p class="f_gmarket main-title">
+                      <b>충남혁신도시 <span class="f_color1">조성 현황</span></b>
+                    </p>
+                  </div>
+                  <div class="build_category">
+                    <ul class="build_category_ul">
+                      <li class="active">
+                        <button type="button" class="build-btn">
+                          <span class="icon">
+                            <img src="../sources/images/build-icon1.png" alt="">
+                          </span>
+                          <p class="txt">주거단지</p>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="build-btn">
+                          <span class="icon">
+                            <img src="../sources/images/build-icon2.png" alt="">
+                          </span>
+                          <p class="txt">상권</p>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="build-btn">
+                          <span class="icon">
+                            <img src="../sources/images/build-icon3.png" alt="">
+                          </span>
+                          <p class="txt">교육</p>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="build-btn">
+                          <span class="icon">
+                            <img src="../sources/images/build-icon4.png" alt="">
+                          </span>
+                          <p class="txt">병원</p>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="build-btn">
+                          <span class="icon">
+                            <img src="../sources/images/build-icon5.png" alt="">
+                          </span>
+                          <p class="txt">공공청사</p>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="build-btn">
+                          <span class="icon">
+                            <img src="../sources/images/build-icon6.png" alt="">
+                          </span>
+                          <p class="txt">산업단지</p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="city_build-count">
+                    현재 공동 주택 / 주상복합 / 단독주택 <b class="f_color1">41,500세대</b> 조성
+                  </p>
+                  <div class="city_person-count">
+                    <div class="txtBox">
+                      <p class="f_gmarket txt1">
+                        충남혁신도시 <br/>
+                        <b>인구현황</b>
+                      </p>
+                    </div>
+                    <div class="txtBox">
+                      <p class="txt2">34,629 명</p>
+                      <p class="txt3">(2023년 9월 말 기준)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main_sec main_plan">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="main-titleBox">
+                <p class="f_gmarket main-title">충남혁신도시 <b>개발특성화 계획</b></p>
+                <p class="main-expl">도청이전 신도시 ‘충남혁신도시의 개발 방향’입니다.</p>
+                <a href="" class="main-more">
+                  <span class="txt">전체보기</span>
+                  <span class="sym"></span>
+                </a>
+              </div>
+              <div class="main_plan-slider">
+                <div class="swiper-container ov-hidden">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="main_plan-thumb">
+                        <img src="../sources/images/main_plan-thumb1.jpg" alt="">
+                      </div>
+                      <div class="main_plan-txtBox">
+                        <p class="txt1">도시가 숲이되는</p>
+                        <p class="txt2">Green City</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="main_plan-thumb">
+                        <img src="../sources/images/main_plan-thumb1.jpg" alt="">
+                      </div>
+                      <div class="main_plan-txtBox">
+                        <p class="txt1">자연이 에너지가 되는</p>
+                        <p class="txt2">신재생 에너지도시</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="main_plan-thumb">
+                        <img src="../sources/images/main_plan-thumb1.jpg" alt="">
+                      </div>
+                      <div class="main_plan-txtBox">
+                        <p class="txt1">자전거이용이 자유로운</p>
+                        <p class="txt2">자전거 천국도시</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="main_plan-thumb">
+                        <img src="../sources/images/main_plan-thumb1.jpg" alt="">
+                      </div>
+                      <div class="main_plan-txtBox">
+                        <p class="txt1">일상에 불편함이 없는</p>
+                        <p class="txt2">안전도시</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="main_plan-thumb">
+                        <img src="../sources/images/main_plan-thumb1.jpg" alt="">
+                      </div>
+                      <div class="main_plan-txtBox">
+                        <p class="txt1">국내 최고의 교육경쟁력 확보</p>
+                        <p class="txt2">교육 특화도시</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- } Contents (Main) -->
   </body>
 </html>
