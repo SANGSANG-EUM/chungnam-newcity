@@ -25,12 +25,29 @@ $(document).ready(function(){
 
   // (메인) 조성현황 버튼 클릭시 지도 이미지 변환
   const cityMap = $(".build-map-viewer img");
+  const cityMap_mo =  $(".mo-main_vs-map_dim");
   const buildCategoryBtn = $(".build-btn");
+  const cityMap_mo_close = $(".mo-main_vs-map-close");
 
   buildCategoryBtn.on('click', function(){
+    const screenWidth_in = screen.width;
     let _mapImage = $(this).data('map-image');
 
+    $(this).addClass('active').closest('li').siblings().find('.build-btn').removeClass('active');
+
     cityMap.attr('src', _mapImage);
+
+    if(screenWidth_in < 1023) {
+      cityMap_mo.fadeIn(200);
+      cityMap_mo.find(".mo-main_vs-map").css({"margin-top":"0"});
+    } else {
+      cityMap_mo.hide();
+    }
+  });
+
+  cityMap_mo_close.on('click', function(){
+    cityMap_mo.fadeOut(200);
+    cityMap_mo.find(".mo-main_vs-map").css({"margin-top":"50px"});
   });
 
   // (메인) 충남혁신도시 인구현황
@@ -51,7 +68,7 @@ $(document).ready(function(){
 
   // (메인) 충남혁신도시 개발특성화 계획 슬라이더
   var swiper = new Swiper(".main_plan-slider .swiper-container", {
-    slidesPerView: 5,
+    slidesPerView: 1,
     spaceBetween: 0,
     centeredSlides: true,
     loop: true,
@@ -59,6 +76,14 @@ $(document).ready(function(){
     navigation: {
       nextEl: ".swiper-next",
       prevEl: ".swiper-prev",
+    },
+    breakpoints: {
+      1281: {
+        slidesPerView: 5
+      },
+      768: {
+        slidesPerView: 3
+      }
     }
   });
 

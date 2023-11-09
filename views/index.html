@@ -107,7 +107,7 @@
               </div>
               <div class="main_vs_rt">
                 <div class="main_vs-txtBox">
-                  <p class="f_gmarket txt1">내 삶을 바꾸는 도시, 충남혁신도시</p>
+                  <p class="f_gmarket txt1">내 삶을 바꾸는 도시, <br/>충남혁신도시</p>
                   <p class="f_gmarket txt2">도청이전신도시, 내포신도시가 국가균형 발전을 선도하는 <br/>충남혁신도시로 새롭게 거듭납니다.</p>
                 </div>
                 <div class="main_vs-build">
@@ -115,11 +115,14 @@
                     <p class="f_gmarket main-title">
                       <b>충남혁신도시 <span class="f_color1">조성 현황</span></b>
                     </p>
+                    <p class="build_info-txt">
+                      <img src="../sources/images/pin-icon.png" alt="">버튼을 선택하시면, <b>충남혁신도시의 현황을 한눈에</b> 알 수 있습니다.
+                    </p>
                   </div>
                   <div class="build_category">
                     <ul class="build_category_ul">
                       <li class="active">
-                        <button type="button" class="build-btn" data-map-image="../sources/images/main_vs-map.png">
+                        <button type="button" class="build-btn active" data-map-image="../sources/images/main_vs-map.png">
                           <span class="icon">
                             <img src="../sources/images/build-icon1.png" alt="">
                           </span>
@@ -303,7 +306,7 @@
                       </span>
                       <div class="txtBox">
                         <button type="button" class="text_row1 subj" data-link="게시글 상세 링크삽입">내포신도시 인구현황('23년 9월 말)</button>
-                        <div class="expl">내포신도시 인구현황('23년 9월 말) 기준 자료입니다. 내포신도시 인구현황('23년 9월 말) 기준 자료입니다.</div>
+                        <div class="text_row2 expl">내포신도시 인구현황('23년 9월 말) 기준 자료입니다. 내포신도시 인구현황('23년 9월 말) 기준 자료입니다.</div>
                       </div>
                       <span class="date">2023-09-30</span>
                     </div>
@@ -454,7 +457,7 @@
                 <div class="fnb">
                   <ul class="fnb_ul">
                     <li>
-                      <a href="http://www.chungnam.go.kr/cnnet/content.do?mnu_cd=CNNMENU02538" class="first">개인정보처리방침</a>
+                      <a href="http://www.chungnam.go.kr/cnnet/content.do?mnu_cd=CNNMENU02538" target="_blank" class="first">개인정보처리방침</a>
                     </li>
                     <li>
                       <a href="">이용약관</a>
@@ -482,11 +485,23 @@
     </div>
     <!-- } Footer -->
 
+    <!-- Top Button { -->
     <div id="go-top">
       <a href="#top">
         <span></span>
         <span class="sound_only">TOP</span>
       </a>
     </div>
+    <!-- } Top Button -->
+
+    <!-- (모바일)조성현황 지도 popup { -->
+    <div class="mo-main_vs-map_dim">
+      <div class="build-map-viewer mo-main_vs-map">
+        <button type="button" class="mo-main_vs-map-close"></button>
+        <img src="../sources/images/main_vs-map.png" alt="조성현황 지도">
+      </div>
+    </div>
+    <!-- } (모바일)조성현황 지도 popup -->
+
   </body>
 </html>
