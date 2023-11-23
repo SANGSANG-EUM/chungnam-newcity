@@ -3,14 +3,25 @@ function printPage() {
   window.print();
 }
 
-//3자리마다 , 찍기
+// 3자리마다 , 찍기
 function numberCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+// (공통) 팝업 열기
+function popup(id) {
+  const popupId = $('#'+id);
+  popupId.fadeIn(300);
+  popupId.find('.popup_wrap').css({'margin-top':'30px'});
 }
 
 // Document Ready Function
 $(document).ready(function(){
-  // Top Button
+
+  // (플러그인) 높이값 통일
+  $('.matchH').children().matchHeight();
+
+  // (공통) Top Button
 	$(function () { $(window).scroll(function () { 
 		if ($(this).scrollTop() > 100) { 
 			$('#go-top').fadeIn(); 
@@ -23,11 +34,19 @@ $(document).ready(function(){
 		$('body,html').animate({ scrollTop: 0 }, 400); return false; }); 
 	});
 
+  // (공통) 팝업 닫기
+  const popupClose = $('.popup_close');
+  popupClose.on('click', function(){
+    const popupOri = $(this).closest('.popup');
+    popupOri.find('.popup_wrap').css({'margin-top':'70px'});
+    popupOri.fadeOut(300); 
+  });
+
   // (메인) 조성현황 버튼 클릭시 지도 이미지 변환
-  const cityMap = $(".build-map-viewer img");
-  const cityMap_mo =  $(".mo-main_vs-map_dim");
-  const buildCategoryBtn = $(".build-btn");
-  const cityMap_mo_close = $(".mo-main_vs-map-close");
+  const cityMap = $('.build-map-viewer img');
+  const cityMap_mo =  $('.mo-main_vs-map_dim');
+  const buildCategoryBtn = $('.build-btn');
+  const cityMap_mo_close = $('.mo-main_vs-map-close');
 
   buildCategoryBtn.on('click', function(){
     const screenWidth_in = screen.width;
@@ -39,7 +58,7 @@ $(document).ready(function(){
 
     if(screenWidth_in < 1023) {
       cityMap_mo.fadeIn(200);
-      cityMap_mo.find(".mo-main_vs-map").css({"margin-top":"0"});
+      cityMap_mo.find('.mo-main_vs-map').css({'margin-top':'0'});
     } else {
       cityMap_mo.hide();
     }
@@ -47,35 +66,35 @@ $(document).ready(function(){
 
   cityMap_mo_close.on('click', function(){
     cityMap_mo.fadeOut(200);
-    cityMap_mo.find(".mo-main_vs-map").css({"margin-top":"50px"});
+    cityMap_mo.find('.mo-main_vs-map').css({'margin-top':'50px'});
   });
 
   // (메인) 충남혁신도시 인구현황
-  let mainPersonCountSelector = $(".city_person-count .number");
+  let mainPersonCountSelector = $('.city_person-count .number');
   let mainPersonCount = parseInt(mainPersonCountSelector.data('count'));
   
   $({ val : 0 }).animate({ val : mainPersonCount }, {
     duration: 1000,
     step: function() {
       let num = numberCommas(Math.floor(this.val));
-      $(".city_person-count .number").text(num);
+      $('.city_person-count .number').text(num);
     },
     complete: function() {
       let num = numberCommas(Math.floor(this.val));
-      $(".city_person-count .number").text(num);
+      $('.city_person-count .number').text(num);
     }
   });
 
   // (메인) 충남혁신도시 개발특성화 계획 슬라이더
-  var swiper = new Swiper(".main_plan-slider .swiper-container", {
+  var swiper = new Swiper('.main_plan-slider .swiper-container', {
     slidesPerView: 1,
     spaceBetween: 0,
     centeredSlides: true,
     loop: true,
     spped: 800,
     navigation: {
-      nextEl: ".swiper-next",
-      prevEl: ".swiper-prev",
+      nextEl: '.swiper-next',
+      prevEl: '.swiper-prev',
     },
     breakpoints: {
       1281: {
@@ -88,15 +107,36 @@ $(document).ready(function(){
   });
 
   // (메인) 공지사항, 개발관련자료 아코디언 및 링크이동
-  $(".main_board_ct").on('click', '.subj', function(){
+  $('.main_board_ct').on('click', '.subj', function(){
     let _post = $(this).closest('.main_board_post');
 
     _post.addClass('active').siblings().removeClass('active');
   });
 
-  $(".main_board_ct").on('click', '.main_board_post.active', function(){
+  $('.main_board_ct').on('click', '.main_board_post.active', function(){
     let _link = $(this).find('.subj').data('link');
 
     location.href = _link;
   });
+
+  // (서브) 브레드크럼
+  $('.breadcrumbs_menu').click(function () {
+    if ($(this).siblings('.breadcrumbs_menu-list').hasClass('active')) {
+      $(this).siblings('.breadcrumbs_menu-list').removeClass('active');
+      $(this).removeClass('active');
+    } else {
+      $('.breadcrumbs_menu-list').removeClass('active');
+      $(this).siblings('.breadcrumbs_menu-list').addClass('active');
+      $('.breadcrumbs_menu').removeClass('active');
+      $(this).addClass('active');
+    }
+  });
+
+  $(document).on('mouseup focusout', function (e) {
+    if ($(".breadcrumbs_list").has(e.target).length === 0) {
+      $('.breadcrumbs_menu-list').removeClass('active');
+      $('.breadcrumbs_menu').removeClass('active');
+    }
+  });
+
 });

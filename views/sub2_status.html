@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="meta_viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+    <title>내포신도시</title>
+
+    <!-- JS 파일 연결 -->
+    <script src="../sources/js/jquery-3.6.0.min.js"></script>
+    <script src="../sources/plugin/swiper/swiper-bundle.min.js"></script>
+    <script src="../sources/plugin/matchheight/jquery.matchHeight.js"></script>
+    <script src="../sources/js/normal.js"></script>
+    
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="../sources/plugin/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../sources/css/fonts.css">
+    <link rel="stylesheet" href="../sources/css/common.css">
+    <link rel="stylesheet" href="../sources/css/normal.css">
+    <link rel="stylesheet" href="../sources/css/responsive.css">
+
+    <!-- Favicon { -->
+    <!-- <link rel="shortcut icon" href="/source/img/favicon.ico"> -->
+    <!-- } Favicon -->
+  </head>
+  <body>
+    <!-- Header { -->
+    <div id="header">
+      <div class="container">
+        <div class="inner">
+          <h1 class="hd_logo">
+            <a href="./index.html">
+              <img src="../sources/images/logo.png" alt="충청남도내포신도시">
+            </a>
+          </h1>
+          <nav class="gnb">
+            <ul class="gnb_ul-dp1">
+              <li>
+                <a href="">충남혁신도시 소개</a>
+              </li>
+              <li>
+                <a href="">정보공개</a>
+              </li>
+              <li>
+                <a href="">소식알림</a>
+              </li>
+              <li>
+                <a href="">소통/참여</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hd_rnb">
+            <div class="hd_search">
+              <form action="">
+                <fieldset>
+                  <legend class="sound_only">전체검색메뉴</legend>
+                  <input type="text" class="hd_search-keyword" placeholder="검색어를 입력하세요.">
+                  <button type="submit" class="hd_search-submit" title="검색하기"></button>
+                </fieldset>
+              </form>
+            </div>
+            <div class="mb_nav">
+              <ul class="mb_nav_ul">
+                <li>
+                  <a href="">로그인</a>
+                </li>
+                <li>
+                  <a href="">회원가입</a>
+                </li>
+              </ul>
+            </div>
+            <a href="" class="chungnam_page-link">
+              <img src="../sources/images/chungnam-logo.png" alt="새창열림, 충청남도 홈페이지로 이동">
+            </a>
+            <button type="button" class="all_menu-btn">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } Header -->
+
+    <!-- Contents (status) { -->
+    <div class="contentsWrap sub status">
+      
+      <div id="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs_wrap">
+            <div class="wrapper">
+              <div class="inner">
+                <ul class="breadcrumbs_list">
+                  <li class="breadcrumbs_item breadcrumbs_item-home">
+                    <a href="../views/index.html" title="메인 바로가기">
+                      <img src="../sources/images/home-icon.png" alt="홈 아이콘">
+                    </a>
+                  </li>
+                  <li class="breadcrumbs_item breadcrumbs_item-1dep">
+                    <button class="breadcrumbs_menu">정보공개</button>
+                    <ul class="breadcrumbs_menu-list">
+                      <li class="breadcrumbs_menu-item">
+                        <a href="">충남혁신도시 소개</a>
+                      </li>
+                      <li class="breadcrumbs_menu-item">
+                        <a href="">소식알림</a>
+                      </li>
+                      <li class="breadcrumbs_menu-item">
+                        <a href="">소통/참여</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="breadcrumbs_item breadcrumbs_item-2dep">
+                    <button class="breadcrumbs_menu">추진 현황</button>
+                    <ul class="breadcrumbs_menu-list">
+                      <li class="breadcrumbs_menu-item">
+                        <a href="">개발관련자료</a>
+                      </li>
+                      <li class="breadcrumbs_menu-item">
+                        <a href="">관련법규</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub_sec sub_sec-title">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="sub_titleBox">
+                <p class="f_gmarket sub_title">추진 현황</p>
+                <p class="sub_expl">현재 개발 진행 상황을 알려드립니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub_sec dev_sec_1">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="sub_head">
+                <p class="sub_subject">주요기관 신축공사</p>
+              </div>
+              <div class="sub_body">
+                <div class="table_wrap">
+                  <table class="table">
+                    <caption>주요기관 신축공사에 대한 표로 공사명, 공사비, 사업기간, 시공사, 비고를 포함</caption>
+                    <thead>
+                      <tr>
+                        <th>공사명</th>
+                        <th>공사비</th>
+                        <th>사업기간</th>
+                        <th>시공사</th>
+                        <th>비고</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="bold">충청남도청 및 충청남도의회</td>
+                        <td>3,250억원</td>
+                        <td>2008. 12. ~ 2012. 12(준공)</td>
+                        <td>계룡건설</td>
+                        <td>
+                          <a href="" class="table_btn table_btn-link">상세보기</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold">충청남도교육청</td>
+                        <td>477억원</td>
+                        <td>2011. 04. ~ 2013. 02(준공)</td>
+                        <td>계룡건설</td>
+                        <td>
+                          <a href="" class="table_btn table_btn-link">상세보기</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold">충남지방경찰청</td>
+                        <td>344억원</td>
+                        <td>2011. 05. ~ 2013. 09(준공)</td>
+                        <td>장위건설</td>
+                        <td>
+                          <a href="" class="table_btn table_btn-link">상세보기</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub_sec dev_sec_2">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="sub_head">
+                <p class="sub_subject">부지조성공사<span>[8개 공구 9,951천㎡]</span></p>
+                <a href="javascript:void(0)" class="main-more" onclick="popup('glancePop02')">
+                  <span class="txt">토지이용계획도 보기</span>
+                  <span class="sym"></span>
+                </a>
+              </div>
+              <div class="sub_body">
+                <div class="table_wrap">
+                  <table class="table">
+                    <caption>부지조성공사에 대한 표로 공사명, 공사비, 사업기간, 시공사를 포함</caption>
+                    <thead>
+                      <tr>
+                        <th>공사명</th>
+                        <th>공사비</th>
+                        <th>사업기간</th>
+                        <th>시공사</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="bold">1 - 1공구(1,501천㎡)</td>
+                        <td>509억원</td>
+                        <td>2011. 08. ~ 2014. 10.(준공)</td>
+                        <td>LH(코오롱글로벌)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">1 - 2공구(1,570천㎡)</td>
+                        <td>227억원</td>
+                        <td>2016. 8. ~ 2020. 5.(준공)</td>
+                        <td>LH(지평토건)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">1 - 3공구(372천㎡)</td>
+                        <td>165억원</td>
+                        <td>2013.11. ~ 2016.07.(준공)</td>
+                        <td>LH(명지건설)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">2 - 1공구(984천㎡)</td>
+                        <td>344억원</td>
+                        <td>2009. 05. ~ 2013. 11.(준공)</td>
+                        <td>CDC(현대건설)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">2 - 2공구(889천㎡)</td>
+                        <td>424억원</td>
+                        <td>2010. 04. ~ 2013. 12(준공)</td>
+                        <td>CDC(극동건설)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">2 - 3공구(1,909천㎡)</td>
+                        <td>321억원</td>
+                        <td>2010. 11. ~ 2013. 12.(준공)</td>
+                        <td>CDC(현대아산)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">3 - 1공구(1,542천㎡)</td>
+                        <td>223억원</td>
+                        <td>2016. 8. ~ 2020. 5.(준공)</td>
+                        <td>LH(지평토건)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">3 - 2공구(1,185천㎡)</td>
+                        <td>318억원</td>
+                        <td>2012. 01. ~ 2015. 07.(준공)</td>
+                        <td>LH(동성건설)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub_sec dev_sec_3">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="sub_head">
+                <p class="sub_subject">기반시설공사</p>
+              </div>
+              <div class="sub_body">
+                <div class="table_wrap">
+                  <table class="table">
+                    <caption>기반시설공사에 대한 표로 공사명, 공사비, 사업기간, 시공사를 포함</caption>
+                    <thead>
+                      <tr>
+                        <th>공사명</th>
+                        <th>공사비</th>
+                        <th>사업기간</th>
+                        <th>시공사</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="bold">하수처리시설</td>
+                        <td>775억원</td>
+                        <td>2010. 10. ~ 2015. 12.(준공)</td>
+                        <td>CDC(GS건설)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">자동집하시설</td>
+                        <td>966억원</td>
+                        <td>유지관리운전 시행</td>
+                        <td>CDC(포스코건설)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">배수지 건설공사</td>
+                        <td>105억원</td>
+                        <td>2010. 10. ~ 2012. 10.(준공)</td>
+                        <td>CDC(태성건설)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">생태하천 조성(지구외)</td>
+                        <td>35억원</td>
+                        <td>2010. 10. ~ 2013. 12.(준공)</td>
+                        <td>CDC(성보건설)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">조경공사</td>
+                        <td>1,323억원</td>
+                        <td>공사 중</td>
+                        <td>CDC, LH(승화건설 등)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">전기공사</td>
+                        <td>286.5억원</td>
+                        <td>공사 중</td>
+                        <td>CDC, LH(삼흥건설 등)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">집단에너지 공급시설</td>
+                        <td>11,000억원</td>
+                        <td>2011. 07. ~ 2022. 06.</td>
+                        <td>내포그린에너지</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">지방도 609호 확포장(연결)</td>
+                        <td>447억원</td>
+                        <td>2009. 12. ~ 2013. 12.(준공)</td>
+                        <td>충청남도(한화, 동우)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">신도시 주진입도로<br>(신도시~예산수덕사IC) 개설</td>
+                        <td>1,462억원</td>
+                        <td>2011. 07. ~ 2015. 06.(준공)</td>
+                        <td>충청남도(동성건설)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">신도시 제2진입도로<br>(신도시~국도45호) 개설</td>
+                        <td>425억원</td>
+                        <td>2015. 10. ~ 2019. 03.(준공)</td>
+                        <td>충청남도(하남종합건설)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">첨단산단 진입도로 개설</td>
+                        <td>494억원</td>
+                        <td>공사 중</td>
+                        <td>LH(일군토건)</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">지하차도</td>
+                        <td>360억원</td>
+                        <td>2010. 07. ~ 2012. 07.(준공)</td>
+                        <td>CDC(진흥기업)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub_sec dev_sec_4">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="sub_head">
+                <p class="sub_subject">학교설립 현황</p>
+              </div>
+              <div class="sub_body">
+                <div class="table_wrap">
+                  <table class="table">
+                    <caption>학교설립 현황에 대한 표로 구분, 학교명, 위치, 면적(㎡), 개교(개원)를 포함</caption>
+                    <thead>
+                      <tr>
+                        <th colspan="2">구분</th>
+                        <th>학교명</th>
+                        <th>위치</th>
+                        <th>면적(㎡)</th>
+                        <th>개교(개원)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td rowspan="4">유치원(4)</td>
+                        <td rowspan="2">공립(2)</td>
+                        <td class="bold">내포유치원</td>
+                        <td>유3</td>
+                        <td>3,300</td>
+                        <td>2015. 3월</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">가람유치원</td>
+                        <td>유4</td>
+                        <td>3,300</td>
+                        <td>2017. 3월</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="2">사립(2)</td>
+                        <td class="bold">내포글로벌 유치원</td>
+                        <td>유2</td>
+                        <td>1,704</td>
+                        <td>2018. 3월</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">풀꽃향기 유치원</td>
+                        <td>RH7</td>
+                        <td>988</td>
+                        <td>2016. 3월</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" rowspan="3">초등학교(3)</td>                        <td class="bold">내포초등학교<br>(병설유치원 포함)</td>
+                        <td>초6</td>
+                        <td>14,656</td>
+                        <td>2013. 3월</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">한울초등학교<br>(병설유치원 포함)</td>
+                        <td>초4</td>
+                        <td>13,000</td>
+                        <td>2016. 9월</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">보성초등학교<br>(병설유치원 포함)</td>
+                        <td>초2</td>
+                        <td>13,000</td>
+                        <td>2018. 4월</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" rowspan="2">중학교(2)</td>
+                        <td class="bold">내포중학교</td>
+                        <td>중2</td>
+                        <td>12,975</td>
+                        <td>2013. 3월</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">덕산중학교</td>
+                        <td>중1</td>
+                        <td>14,000</td>
+                        <td>2018. 11월</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" rowspan="2">공립고등학교(2)</td>
+                        <td class="bold">홍성고</td>
+                        <td>고2</td>
+                        <td>15,733</td>
+                        <td>2016. 2월</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">덕산고</td>
+                        <td>고1</td>
+                        <td>16,000</td>
+                        <td>2019. 3월</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub_sec dev_sec_5">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="sub_head">
+                <p class="sub_subject">주택건립공사</p>
+              </div>
+              <div class="sub_body">
+                <div class="table_wrap">
+                  <table class="table">
+                    <caption>주택건립공사에 대한 표로 공사명, 가구수, 공급 및 입주(예정)시기, 시행(시공)사를 포함</caption>
+                    <thead>
+                      <tr>
+                        <th>공사명</th>
+                        <th>가구수</th>
+                        <th>공급 및 입주(예정)시기</th>
+                        <th>시행(시공)사</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="bold">롯데캐슬(분양 완료)</td>
+                        <td>885세대</td>
+                        <td>2012. 12.입주 완료</td>
+                        <td>CDC, 롯데건설</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">웅진스타클래스(분양 완료)</td>
+                        <td>938세대</td>
+                        <td>2014. 05. 입주 완료</td>
+                        <td>극동건설</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">효성더루벤스(분양완료)</td>
+                        <td>915세대</td>
+                        <td>2014. 09. 입주 완료</td>
+                        <td>진흥기업</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">RH-7(LH) APT 건립공사</td>
+                        <td>2,127세대</td>
+                        <td>2015. 09. 입주완료</td>
+                        <td>서희건설</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">경남 APT 건립공사</td>
+                        <td>990세대</td>
+                        <td>2016. 02. 입주 완료</td>
+                        <td>경남기업</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">중흥 APT 건립공사</td>
+                        <td>1,660세대</td>
+                        <td>2016. 04. 입주 완료</td>
+                        <td>중흥건설</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">모아 APT 건립공사</td>
+                        <td>1,260세대</td>
+                        <td>2016. 06. 입주 완료</td>
+                        <td>모아주택산업</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">이주자 택지(분양 완료)</td>
+                        <td>428필지</td>
+                        <td>2011. 12. 공급 완료</td>
+                        <td>CDC, LH</td>
+                      </tr>
+                    </tbody>                    
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub_sec dev_sec_6">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="sub_head">
+                <p class="sub_subject">주거용 오피스텔</p>
+              </div>
+              <div class="sub_body">
+                <div class="table_wrap">
+                  <table class="table">
+                    <caption>주거용 오피스텔에 대한 표로 공사명, 가구수, 공급 및 입주(예정)시기, 시행(시공)사를 포함</caption>
+                    <thead>
+                      <tr>
+                        <th>공사명</th>
+                        <th>가구수</th>
+                        <th>공급 및 입주(예정)시기</th>
+                        <th>시행(시공)사</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="bold">(주)현대아산(밸앤더슨)</td>
+                        <td>528세대</td>
+                        <td>2014. 08. 입주 완료</td>
+                        <td>(주)현대아산</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">(주)국제아이비(아르페온1)</td>
+                        <td>313세대</td>
+                        <td>2014. 05. 입주 완료</td>
+                        <td>(주)국제아이비</td>
+                      </tr>
+                      <tr>
+                        <td class="bold">(주)상리홀딩스(제나우스)</td>
+                        <td>350세대</td>
+                        <td>2014. 10. 입주 완료</td>
+                        <td>(주)상리홀딩스</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- popup(토지이용계획도) { -->
+      <div id="glancePop02" class="popup">
+        <div class="popup_wrap">
+          <button type="button" class="popup_close"></button>
+          <div class="popup_inner">
+            <img src="../sources/images/glance-img2.jpg" alt="토지이용계획도">
+          </div>
+        </div>
+      </div>
+      <!-- } popup(토지이용계획도) -->
+
+      <div id="evaluation">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="evaluation_wrap">
+                <div class="evaluation_body">
+                  <form action="">
+                    <p class="evaluation_title">이 페이지에서 제공하는 정보에 대하여 만족하십니까?</p>
+                    <ul class="evaluation_list">
+                      <li class="evaluation_item radio_wrap">
+                        <input type="radio" name="eval" id="eval-1">
+                        <label for="eval-1">매우 만족</label>
+                      </li>
+                      <li class="evaluation_item radio_wrap">
+                        <input type="radio" name="eval" id="eval-2">
+                        <label for="eval-2">만족</label>
+                      </li>
+                      <li class="evaluation_item radio_wrap">
+                        <input type="radio" name="eval" id="eval-3">
+                        <label for="eval-3">보통</label>
+                      </li>
+                      <li class="evaluation_item radio_wrap">
+                        <input type="radio" name="eval" id="eval-4">
+                        <label for="eval-4">불만족</label>
+                      </li>
+                      <li class="evaluation_item radio_wrap">
+                        <input type="radio" name="eval" id="eval-5">
+                        <label for="eval-5">매우 불만족</label>
+                      </li>
+                    </ul>
+                    <div class="evaluation_box">
+                      <input type="text" class="evaluation_text">
+                      <button class="evaluation_fin">평가하기</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="evaluation_info">
+                  <p class="evaluation_info-txt"><b>담당부서 : </b>공공기관유치단</p>
+                  <p class="evaluation_info-txt"><b>담당자 : </b>김재준</p>
+                  <p class="evaluation_info-txt"><b>문의전화 : </b>041-635-3388</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- } Contents (status) -->
+
+    <!-- Footer { -->
+    <div id="footer">
+      <div class="ft_related">
+        <div class="container">
+          <div class="wrapper">
+            <div class="ft_related_ct">
+              <p class="f_gmarket ft_related-tit"><img src="../sources/images/realated-site.png" alt="">관련사이트</p>
+              <div class="ft_related-site">
+                <a href="http://www.chungnam.go.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-cn.jpg" alt="충청남도">
+                </a>
+                <a href="https://www.hongseong.go.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-hs.jpg" alt="홍성군">
+                </a>
+                <a href="https://www.yesan.go.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-ys.jpg" alt="예산군">
+                </a>
+                <a href="https://art.chungnam.go.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-literary.jpg" alt="충청남도 문화예술회관">
+                </a>
+                <a href="http://clehrd.or.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-cile.jpg" alt="충청남도 평생교육진흥원">
+                </a>
+                <a href="https://www.cndc.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-cndc.jpg" alt="충청남도 개발공사">
+                </a>
+                <a href="https://www.lh.or.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-lh.jpg" alt="한국토지주택공사">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ft_cont">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="ft_cont_lt">
+                <div class="fnb">
+                  <ul class="fnb_ul">
+                    <li>
+                      <a href="http://www.chungnam.go.kr/cnnet/content.do?mnu_cd=CNNMENU02538" target="_blank" class="first">개인정보처리방침</a>
+                    </li>
+                    <li>
+                      <a href="">이용약관</a>
+                    </li>
+                    <li>
+                      <a href="http://www.chungnam.go.kr/dept/memberInfo.do?mnu_cd=SESMENU00003&amp;dept_cd=6441369" target="_blank">공공기관유치단 직원안내</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="chungnam_finfo">
+                  <span class="txt1">[32255] 충청남도 홍성군 홍북읍 충남대로 21 충청남도청</span>
+                  <span class="txt2">대표전화 : 041-120</span>
+                </div>
+                <p class="copyright">Copyrightⓒ CHUNGCHEONGNAM-DO. All rights reserved.</p>
+              </div>
+              <div class="ft_cont_rt">
+                <a href="./index.html" class="ft-logo">
+                  <img src="../sources/images/logo-white.png" alt="충청남도내포신도시">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } Footer -->
+
+    <!-- Top Button { -->
+    <div id="go-top">
+      <a href="#top">
+        <span></span>
+        <span class="sound_only">TOP</span>
+      </a>
+    </div>
+    <!-- } Top Button -->
+  </body>
+</html>

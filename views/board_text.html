@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="meta_viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+    <title>내포신도시</title>
+
+    <!-- JS 파일 연결 -->
+    <script src="../sources/js/jquery-3.6.0.min.js"></script>
+    <script src="../sources/plugin/swiper/swiper-bundle.min.js"></script>
+    <script src="../sources/plugin/matchheight/jquery.matchHeight.js"></script>
+    <script src="../sources/js/normal.js"></script>
+    
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="../sources/plugin/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../sources/css/fonts.css">
+    <link rel="stylesheet" href="../sources/css/common.css">
+    <link rel="stylesheet" href="../sources/css/normal.css">
+    <link rel="stylesheet" href="../sources/css/responsive.css">
+
+    <!-- Favicon { -->
+    <!-- <link rel="shortcut icon" href="/source/img/favicon.ico"> -->
+    <!-- } Favicon -->
+  </head>
+  <body>
+    <!-- Header { -->
+    <div id="header">
+      <div class="container">
+        <div class="inner">
+          <h1 class="hd_logo">
+            <a href="./index.html">
+              <img src="../sources/images/logo.png" alt="충청남도내포신도시">
+            </a>
+          </h1>
+          <nav class="gnb">
+            <ul class="gnb_ul-dp1">
+              <li>
+                <a href="">충남혁신도시 소개</a>
+              </li>
+              <li>
+                <a href="">정보공개</a>
+              </li>
+              <li>
+                <a href="">소식알림</a>
+              </li>
+              <li>
+                <a href="">소통/참여</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hd_rnb">
+            <div class="hd_search">
+              <form action="">
+                <fieldset>
+                  <legend class="sound_only">전체검색메뉴</legend>
+                  <input type="text" class="hd_search-keyword" placeholder="검색어를 입력하세요.">
+                  <button type="submit" class="hd_search-submit" title="검색하기"></button>
+                </fieldset>
+              </form>
+            </div>
+            <div class="mb_nav">
+              <ul class="mb_nav_ul">
+                <li>
+                  <a href="">로그인</a>
+                </li>
+                <li>
+                  <a href="">회원가입</a>
+                </li>
+              </ul>
+            </div>
+            <a href="" class="chungnam_page-link">
+              <img src="../sources/images/chungnam-logo.png" alt="새창열림, 충청남도 홈페이지로 이동">
+            </a>
+            <button type="button" class="all_menu-btn">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } Header -->
+
+    <!-- Contents (boardText) { -->
+    <div class="contentsWrap sub boardText">
+      
+      <div id="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs_wrap">
+            <div class="wrapper">
+              <div class="inner">
+                <ul class="breadcrumbs_list">
+                  <li class="breadcrumbs_item breadcrumbs_item-home">
+                    <a href="../views/index.html" title="메인 바로가기">
+                      <img src="../sources/images/home-icon.png" alt="홈 아이콘">
+                    </a>
+                  </li>
+                  <li class="breadcrumbs_item breadcrumbs_item-1dep">
+                    <button class="breadcrumbs_menu">소식알림</button>
+                    <ul class="breadcrumbs_menu-list">
+                      <li class="breadcrumbs_menu-item">
+                        <a href="">충남혁신도시 소개</a>
+                      </li>
+                      <li class="breadcrumbs_menu-item">
+                        <a href="">정보공개</a>
+                      </li>
+                      <li class="breadcrumbs_menu-item">
+                        <a href="">소통/참여</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="breadcrumbs_item breadcrumbs_item-2dep">
+                    <button class="breadcrumbs_menu">공지사항</button>
+                    <ul class="breadcrumbs_menu-list">
+                      <li class="breadcrumbs_menu-item">
+                        <a href="">영상자료</a>
+                      </li>
+                      <li class="breadcrumbs_menu-item">
+                        <a href="">홍보책자</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub_sec sub_sec-title">
+        <div class="container">
+          <div class="wrapper"> 
+            <div class="inner">
+              <div class="sub_titleBox sub_titleBox-board">
+                <p class="f_gmarket sub_title">공지사항</p>
+                <p class="sub_expl">충남혁신도시의 공지사항입니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub_sec text_sec_1">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="sub_body">
+                <div class="board_head">
+                  <div class="board_sch">
+                    <form action="">
+                      <input type="text" name="sch_word" id="sch_word" class="sch_word" placeholder="검색어를 입력해주세요.">
+                      <label for="sch_word">검색어</label>
+                      <button type="submit" class="sch_btn">검색</button>
+                    </form>
+                  </div>
+                  <div class="board_cnt">
+                    <p class="board_cnt-text">전체 <span>46개</span></p>
+                    <p class="board_cnt-text">현재 페이지 <span>1/5</span></p>
+                  </div>
+                </div>
+                <div class="table_wrap">
+                  <table class="table">
+                    <caption>번호, 제목, 작성일, 첨부, 조회수를 포함</caption>
+                    <colgroup>
+                      <col class="w5">
+                      <col class="w50">
+                      <col class="w10">
+                      <col class="w5">
+                      <col class="w10">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성일</th>
+                        <th>첨부</th>
+                        <th>조회수</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>45</td>
+                        <td class="title bold left">
+                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
+                        </td>
+                        <td>2023-09-30</td>
+                        <td>
+                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
+                        </td>
+                        <td>3500</td>
+                      </tr>
+                      <tr>
+                        <td>44</td>
+                        <td class="title bold left">
+                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
+                        </td>
+                        <td>2023-09-30</td>
+                        <td>
+                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
+                        </td>
+                        <td>3500</td>
+                      </tr>
+                      <tr>
+                        <td>43</td>
+                        <td class="title bold left">
+                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
+                        </td>
+                        <td>2023-09-30</td>
+                        <td>
+                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
+                        </td>
+                        <td>3500</td>
+                      </tr>
+                      <tr>
+                        <td>42</td>
+                        <td class="title bold left">
+                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
+                        </td>
+                        <td>2023-09-30</td>
+                        <td>
+                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
+                        </td>
+                        <td>3500</td>
+                      </tr>
+                      <tr>
+                        <td>41</td>
+                        <td class="title bold left">
+                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
+                        </td>
+                        <td>2023-09-30</td>
+                        <td>
+                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
+                        </td>
+                        <td>3500</td>
+                      </tr>
+                      <tr>
+                        <td>40</td>
+                        <td class="title bold left">
+                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
+                        </td>
+                        <td>2023-09-30</td>
+                        <td>
+                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
+                        </td>
+                        <td>3500</td>
+                      </tr>
+                      <tr>
+                        <td>39</td>
+                        <td class="title bold left">
+                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
+                        </td>
+                        <td>2023-09-30</td>
+                        <td>
+                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
+                        </td>
+                        <td>3500</td>
+                      </tr>
+                      <tr>
+                        <td>38</td>
+                        <td class="title bold left">
+                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
+                        </td>
+                        <td>2023-09-30</td>
+                        <td>
+                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
+                        </td>
+                        <td>3500</td>
+                      </tr>
+                      <tr>
+                        <td>37</td>
+                        <td class="title bold left">
+                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
+                        </td>
+                        <td>2023-09-30</td>
+                        <td>
+                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
+                        </td>
+                        <td>3500</td>
+                      </tr>
+                      <tr>
+                        <td>36</td>
+                        <td class="title bold left">
+                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
+                        </td>
+                        <td>2023-09-30</td>
+                        <td>
+                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
+                        </td>
+                        <td>3500</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="board_foot">
+                  <div class="pagination">
+                    <ul class="pagination_list">
+                      <li class="pagination_item pagination_item-arr pagination_item-arr_first">
+                        <a href="" class="pagination_link">
+                          <img src="../sources/images/arrow-first.png" alt="처음">
+                        </a>
+                      </li>
+                      <li class="pagination_item pagination_item-arr pagination_item-arr_prev">
+                        <a href="" class="pagination_link">
+                          <img src="../sources/images/arrow-prev.png" alt="이전">
+                        </a>
+                      </li>
+                      <li class="pagination_item pagination_item-num">
+                        <a href="" class="pagination_link active">1</a>
+                      </li>
+                      <li class="pagination_item pagination_item-num">
+                        <a href="" class="pagination_link">2</a>
+                      </li>
+                      <li class="pagination_item pagination_item-num">
+                        <a href="" class="pagination_link">3</a>
+                      </li>
+                      <li class="pagination_item pagination_item-num">
+                        <a href="" class="pagination_link">4</a>
+                      </li>
+                      <li class="pagination_item pagination_item-num">
+                        <a href="" class="pagination_link">5</a>
+                      </li>
+                      <li class="pagination_item pagination_item-arr pagination_item-arr_next">
+                        <a href="" class="pagination_link">
+                          <img src="../sources/images/arrow-next.png" alt="다음">
+                        </a>
+                      </li>
+                      <li class="pagination_item pagination_item-arr pagination_item-arr_last">
+                        <a href="" class="pagination_link">
+                          <img src="../sources/images/arrow-last.png" alt="마지막">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="evaluation">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="evaluation_wrap">
+                <div class="evaluation_body">
+                  <form action="">
+                    <p class="evaluation_title">이 페이지에서 제공하는 정보에 대하여 만족하십니까?</p>
+                    <ul class="evaluation_list">
+                      <li class="evaluation_item radio_wrap">
+                        <input type="radio" name="eval" id="eval-1">
+                        <label for="eval-1">매우 만족</label>
+                      </li>
+                      <li class="evaluation_item radio_wrap">
+                        <input type="radio" name="eval" id="eval-2">
+                        <label for="eval-2">만족</label>
+                      </li>
+                      <li class="evaluation_item radio_wrap">
+                        <input type="radio" name="eval" id="eval-3">
+                        <label for="eval-3">보통</label>
+                      </li>
+                      <li class="evaluation_item radio_wrap">
+                        <input type="radio" name="eval" id="eval-4">
+                        <label for="eval-4">불만족</label>
+                      </li>
+                      <li class="evaluation_item radio_wrap">
+                        <input type="radio" name="eval" id="eval-5">
+                        <label for="eval-5">매우 불만족</label>
+                      </li>
+                    </ul>
+                    <div class="evaluation_box">
+                      <input type="text" class="evaluation_text">
+                      <button class="evaluation_fin">평가하기</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="evaluation_info">
+                  <p class="evaluation_info-txt"><b>담당부서 : </b>공공기관유치단</p>
+                  <p class="evaluation_info-txt"><b>담당자 : </b>김재준</p>
+                  <p class="evaluation_info-txt"><b>문의전화 : </b>041-635-3388</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- } Contents (boardText) -->
+
+    <!-- Footer { -->
+    <div id="footer">
+      <div class="ft_related">
+        <div class="container">
+          <div class="wrapper">
+            <div class="ft_related_ct">
+              <p class="f_gmarket ft_related-tit"><img src="../sources/images/realated-site.png" alt="">관련사이트</p>
+              <div class="ft_related-site">
+                <a href="http://www.chungnam.go.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-cn.jpg" alt="충청남도">
+                </a>
+                <a href="https://www.hongseong.go.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-hs.jpg" alt="홍성군">
+                </a>
+                <a href="https://www.yesan.go.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-ys.jpg" alt="예산군">
+                </a>
+                <a href="https://art.chungnam.go.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-literary.jpg" alt="충청남도 문화예술회관">
+                </a>
+                <a href="http://clehrd.or.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-cile.jpg" alt="충청남도 평생교육진흥원">
+                </a>
+                <a href="https://www.cndc.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-cndc.jpg" alt="충청남도 개발공사">
+                </a>
+                <a href="https://www.lh.or.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-lh.jpg" alt="한국토지주택공사">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ft_cont">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="ft_cont_lt">
+                <div class="fnb">
+                  <ul class="fnb_ul">
+                    <li>
+                      <a href="http://www.chungnam.go.kr/cnnet/content.do?mnu_cd=CNNMENU02538" target="_blank" class="first">개인정보처리방침</a>
+                    </li>
+                    <li>
+                      <a href="">이용약관</a>
+                    </li>
+                    <li>
+                      <a href="http://www.chungnam.go.kr/dept/memberInfo.do?mnu_cd=SESMENU00003&amp;dept_cd=6441369" target="_blank">공공기관유치단 직원안내</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="chungnam_finfo">
+                  <span class="txt1">[32255] 충청남도 홍성군 홍북읍 충남대로 21 충청남도청</span>
+                  <span class="txt2">대표전화 : 041-120</span>
+                </div>
+                <p class="copyright">Copyrightⓒ CHUNGCHEONGNAM-DO. All rights reserved.</p>
+              </div>
+              <div class="ft_cont_rt">
+                <a href="./index.html" class="ft-logo">
+                  <img src="../sources/images/logo-white.png" alt="충청남도내포신도시">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } Footer -->
+
+    <!-- Top Button { -->
+    <div id="go-top">
+      <a href="#top">
+        <span></span>
+        <span class="sound_only">TOP</span>
+      </a>
+    </div>
+    <!-- } Top Button -->
+  </body>
+</html>

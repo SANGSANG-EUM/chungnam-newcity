@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>내포신도시 Markup</title>
-    <script type="text/javascript" src="./sources/js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="./markup/js/ui.js"></script>
-    <link rel="stylesheet" href="./sources/css/fonts.css">
-    <link rel="stylesheet" href="./markup/css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>내포신도시 Markup</title>
+  <script type="text/javascript" src="./sources/js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="./markup/js/ui.js"></script>
+  <link rel="stylesheet" href="./sources/css/fonts.css">
+  <link rel="stylesheet" href="./markup/css/styles.css">
 </head>
 <body>
   <div class="wrapper">
@@ -26,26 +26,28 @@
         <!-- tr 클래스 값 - 빈 값:진행중, fin:완료, del:삭제 -->
         <table>
           <colgroup>
-              <col style="width:18%">
-              <col style="width:6%">
-              <col style="width:13%">
-              <col style="width:6%">
-              <col style="width:5%">
-              <col style="width:5%">
-              <col style="width:5%">
-              <col style="width:*">
+            <col style="width:18%">
+            <col style="width:6%">
+            <col style="width:13%">
+            <col style="width:6%">
+            <col style="width:5%">
+            <col style="width:5%">
+            <col style="width:5%">
+            <col style="width:*">
+            <col style="width:5%">
           </colgroup>
           <thead>
-              <tr>
-                  <th>MENU</th>
-                  <th>페이지타입</th>
-                  <th>URL</th>
-                  <th>VIEW</th>
-                  <th>작업(PC)</th>
-                  <th>작업(MO)</th>
-                  <th>완료여부</th>
-                  <th>COMMENT</th>
-              </tr>
+            <tr>
+              <th>MENU</th>
+              <th>페이지타입</th>
+              <th>URL</th>
+              <th>VIEW</th>
+              <th>작업(PC)</th>
+              <th>작업(MO)</th>
+              <th>완료여부</th>
+              <th>COMMENT</th>
+              <th>기존URL</th>
+            </tr>
           </thead>
           <tbody>
             <tr class="">
@@ -53,208 +55,244 @@
               <td class="t_center">메인</td>
               <td><p class="target"><span class='link'>/views/index.html</span></p></td>
               <td class="btn">
-                  <a class="btnPc" href="./views/index.html" target="_blank">View</a>
+                <a class="btnPc" href="./views/index.html" target="_blank">View</a>
               </td>
               <td class="t_center">▲</td>
               <td class="t_center">▲</td>
               <td class="t_center">▲</td>
               <td>
-                  <ul class="comment">
-                      <li>메뉴 오버시안 대기</li>
-                      <li>모바일 메뉴 작업 필요</li>
-                  </ul>
+                <ul class="comment">
+                  <li>메뉴 오버시안 대기</li>
+                  <li>모바일 메뉴 작업 필요</li>
+                </ul>
+              </td>
+              <td class="btn">
+                <a class="btnPc" href="https://naepo.chungnam.go.kr/naepoMain.do" target="_blank">View</a>
               </td>
             </tr>
             <tr class="">
-              <td>충남혁신도시 소개 > 개요 및 연혁</td>
+              <td>01 충남혁신도시 소개 > 개요 및 연혁</td>
               <td class="t_center">콘텐츠</td>
-              <td><p class="target"><span class='link'>/views/sub/.html</span></p></td>
+              <td><p class="target"><span class='link'>/views/sub1_overview.html</span></p></td>
               <td class="btn">
-                  <a class="btnPc" href="./views/sub/.html" target="_blank">View</a>
+                <a class="btnPc" href="./views/sub1_overview.html" target="_blank">View</a>
+              </td>
+              <td class="t_center">▲</td>
+              <td class="t_center"></td>
+              <td class="t_center"></td>
+              <td>
+                <ul class="comment">
+                  <li>추진경위 시안 수정 대기</li>
+                </ul>
+              </td>
+              <td class="btn">
+                <a class="btnPc" href="https://naepo.chungnam.go.kr/napo/content.do?mnu_cd=NAEMENU00002" target="_blank">View</a>
+              </td>
+            </tr>
+            <tr class="">
+              <td>01 충남혁신도시 소개 > 개발방향 및 특성화 계획</td>
+              <td class="t_center">콘텐츠</td>
+              <td><p class="target"><span class='link'>/views/sub1_plan.html</span></p></td>
+              <td class="btn">
+                <a class="btnPc" href="./views/sub1_plan.html" target="_blank">View</a>
+              </td>
+              <td class="t_center">O</td>
+              <td class="t_center"></td>
+              <td class="t_center"></td>
+              <td>
+                <ul class="comment"></ul>
+              </td>
+              <td class="btn">
+                <a class="btnPc" href="https://naepo.chungnam.go.kr/napo/content.do?mnu_cd=NAEMENU00003" target="_blank">View</a>
+              </td>
+            </tr>
+            <tr class="">
+              <td>01 충남혁신도시 소개 > 토지이용계획도</td>
+              <td class="t_center">콘텐츠</td>
+              <td><p class="target"><span class='link'>/views/sub1_land.html</span></p></td>
+              <td class="btn">
+                <a class="btnPc" href="./views/sub1_land.html" target="_blank">View</a>
+              </td>
+              <td class="t_center">O</td>
+              <td class="t_center"></td>
+              <td class="t_center"></td>
+              <td>
+                <ul class="comment"></ul>
+              </td>
+              <td class="btn">
+                <a class="btnPc" href="https://naepo.chungnam.go.kr/napo/content.do?mnu_cd=NAEMENU00004" target="_blank">View</a>
+              </td>
+            </tr>
+            <tr class="">
+              <td>01 충남혁신도시 소개 > 편의시설</td>
+              <td class="t_center">콘텐츠</td>
+              <td><p class="target"><span class='link'>/views/.html</span></p></td>
+              <td class="btn">
+                <a class="btnPc" href="./views/.html" target="_blank">View</a>
               </td>
               <td class="t_center"></td>
               <td class="t_center"></td>
               <td class="t_center"></td>
               <td>
-                  <ul class="comment">
-                      <li></li>
-                  </ul>
+                <ul class="comment"></ul>
+              </td>
+              <td class="btn">
+                <a class="btnPc" href="https://naepo.chungnam.go.kr/napo/content.do?mnu_cd=NAEMENU00005" target="_blank">View</a>
               </td>
             </tr>
             <tr class="">
-              <td>충남혁신도시 소개 > 개발방향 및 특성화 계획</td>
+              <td>02 정보공개 > 추진 현황</td>
               <td class="t_center">콘텐츠</td>
-              <td><p class="target"><span class='link'>/views/sub/.html</span></p></td>
+              <td><p class="target"><span class='link'>/views/sub2_status.html</span></p></td>
               <td class="btn">
-                  <a class="btnPc" href="./views/sub/.html" target="_blank">View</a>
+                <a class="btnPc" href="./views/sub2_status.html" target="_blank">View</a>
               </td>
-              <td class="t_center"></td>
+              <td class="t_center">▲</td>
               <td class="t_center"></td>
               <td class="t_center"></td>
               <td>
-                  <ul class="comment">
-                      <li></li>
-                  </ul>
+                <ul class="comment">
+                  <li>상세보기 팝업 추가 필요</li>
+                </ul>
               </td>
-            </tr>
-            <tr class="">
-              <td>충남혁신도시 소개 > 토지이용계획도</td>
-              <td class="t_center">콘텐츠</td>
-              <td><p class="target"><span class='link'>/views/sub/.html</span></p></td>
               <td class="btn">
-                  <a class="btnPc" href="./views/sub/.html" target="_blank">View</a>
-              </td>
-              <td class="t_center"></td>
-              <td class="t_center"></td>
-              <td class="t_center"></td>
-              <td>
-                  <ul class="comment">
-                      <li></li>
-                  </ul>
+                <a class="btnPc" href="https://naepo.chungnam.go.kr/napo/content.do?mnu_cd=NAEMENU00006" target="_blank">View</a>
               </td>
             </tr>
             <tr class="">
-              <td>충남혁신도시 소개 > 편의시설</td>
-              <td class="t_center">콘텐츠</td>
-              <td><p class="target"><span class='link'>/views/sub/.html</span></p></td>
-              <td class="btn">
-                  <a class="btnPc" href="./views/sub/.html" target="_blank">View</a>
-              </td>
-              <td class="t_center"></td>
-              <td class="t_center"></td>
-              <td class="t_center"></td>
-              <td>
-                  <ul class="comment">
-                      <li></li>
-                  </ul>
-              </td>
-            </tr>
-            <tr class="">
-              <td>정보공개 > 추진 현황</td>
-              <td class="t_center">콘텐츠</td>
-              <td><p class="target"><span class='link'>/views/sub/.html</span></p></td>
-              <td class="btn">
-                  <a class="btnPc" href="./views/sub/.html" target="_blank">View</a>
-              </td>
-              <td class="t_center"></td>
-              <td class="t_center"></td>
-              <td class="t_center"></td>
-              <td>
-                  <ul class="comment">
-                      <li></li>
-                  </ul>
-              </td>
-            </tr>
-            <tr class="">
-              <td>정보공개 > 개발관련자료</td>
+              <td>02 정보공개 > 개발관련자료</td>
               <td class="t_center">게시판</td>
-              <td><p class="target"><span class='link'>/views/sub/.html</span></p></td>
+              <td><p class="target"><span class='link'>/views/board_text.html</span></p></td>
               <td class="btn">
-                  <a class="btnPc" href="./views/sub/.html" target="_blank">View</a>
+                <a class="btnPc" href="./views/board_text.html" target="_blank">View</a>
               </td>
-              <td class="t_center"></td>
+              <td class="t_center">O</td>
               <td class="t_center"></td>
               <td class="t_center"></td>
               <td>
-                  <ul class="comment">
-                      <li></li>
-                  </ul>
+                <ul class="comment">
+                  <li>03 소식알림 > 공지사항 페이지와 동일한 레이아웃 사용</li>
+                </ul>
+              </td>
+              <td class="btn">
+                <a class="btnPc" href="https://naepo.chungnam.go.kr/napo/board.do?mnu_cd=NAEMENU00007" target="_blank">View</a>
               </td>
             </tr>
             <tr class="">
-              <td>정보공개 > 관련법규</td>
+              <td>02 정보공개 > 관련법규</td>
               <td class="t_center">게시판</td>
-              <td><p class="target"><span class='link'>/views/sub/.html</span></p></td>
+              <td><p class="target"><span class='link'>/views/sub2_law.html</span></p></td>
               <td class="btn">
-                  <a class="btnPc" href="./views/sub/.html" target="_blank">View</a>
+                <a class="btnPc" href="./views/sub2_law.html" target="_blank">View</a>
               </td>
-              <td class="t_center"></td>
+              <td class="t_center">O</td>
               <td class="t_center"></td>
               <td class="t_center"></td>
               <td>
-                  <ul class="comment">
-                      <li></li>
-                  </ul>
+                <ul class="comment"></ul>
+              </td>
+              <td class="btn">
+                <a class="btnPc" href="https://naepo.chungnam.go.kr/napo/content.do?mnu_cd=NAEMENU00008" target="_blank">View</a>
               </td>
             </tr>
             <tr class="">
-              <td>소식알림 > 공지사항</td>
+              <td>03 소식알림 > 공지사항</td>
               <td class="t_center">게시판</td>
-              <td><p class="target"><span class='link'>/views/sub/.html</span></p></td>
+              <td><p class="target"><span class='link'>/views/board_text.html</span></p></td>
               <td class="btn">
-                  <a class="btnPc" href="./views/sub/.html" target="_blank">View</a>
+                <a class="btnPc" href="./views/board_text.html" target="_blank">View</a>
               </td>
-              <td class="t_center"></td>
+              <td class="t_center">O</td>
               <td class="t_center"></td>
               <td class="t_center"></td>
               <td>
-                  <ul class="comment">
-                      <li></li>
-                  </ul>
+                <ul class="comment">
+                  <li>02 정보공개 > 개발관련자료 페이지와 동일한 레이아웃 사용</li>
+                </ul>
+              </td>
+              <td class="btn">
+                <a class="btnPc" href="https://naepo.chungnam.go.kr/napo/board.do?mnu_cd=NAEMENU00011" target="_blank">View</a>
               </td>
             </tr>
             <tr class="">
-              <td>소식알림 > 영상자료</td>
+              <td>03 소식알림 > 영상자료</td>
               <td class="t_center">게시판</td>
-              <td><p class="target"><span class='link'>/views/sub/.html</span></p></td>
+              <td><p class="target"><span class='link'>/views/board_video.html</span></p></td>
               <td class="btn">
-                  <a class="btnPc" href="./views/sub/.html" target="_blank">View</a>
+                <a class="btnPc" href="./views/board_video.html" target="_blank">View</a>
               </td>
-              <td class="t_center"></td>
+              <td class="t_center">O</td>
               <td class="t_center"></td>
               <td class="t_center"></td>
               <td>
-                  <ul class="comment">
-                      <li></li>
-                  </ul>
+                <ul class="comment"></ul>
+              </td>
+              <td class="btn">
+                <a class="btnPc" href="https://naepo.chungnam.go.kr/napo/board.do?mnu_cd=NAEMENU00015" target="_blank">View</a>
               </td>
             </tr>
             <tr class="">
-              <td>소식알림 > 홍보책자</td>
-              <td class="t_center">게시판(E-book)</td>
-              <td><p class="target"><span class='link'>/views/sub/.html</span></p></td>
+              <td>03 소식알림 > 홍보책자</td>
+              <td class="t_center">게시판</td>
+              <td><p class="target"><span class='link'>/views/board_ebook.html</span></p></td>
               <td class="btn">
-                  <a class="btnPc" href="./views/sub/.html" target="_blank">View</a>
+                <a class="btnPc" href="./views/board_ebook.html" target="_blank">View</a>
               </td>
-              <td class="t_center"></td>
+              <td class="t_center">O</td>
               <td class="t_center"></td>
               <td class="t_center"></td>
               <td>
-                  <ul class="comment">
-                      <li></li>
-                  </ul>
+                <ul class="comment"></ul>
               </td>
+              <td class="btn">신규</td>
             </tr>
             <tr class="">
-              <td>소통/참여 > 관련 부서 안내</td>
+              <td>04 소통/참여 > 관련 부서 안내</td>
               <td class="t_center">콘텐츠</td>
-              <td><p class="target"><span class='link'>/views/sub/.html</span></p></td>
+              <td><p class="target"><span class='link'>/views/.html</span></p></td>
               <td class="btn">
-                  <a class="btnPc" href="./views/sub/.html" target="_blank">View</a>
+                <a class="btnPc" href="./views/.html" target="_blank">View</a>
               </td>
               <td class="t_center"></td>
               <td class="t_center"></td>
               <td class="t_center"></td>
               <td>
-                  <ul class="comment">
-                      <li></li>
-                  </ul>
+                <ul class="comment"></ul>
+              </td>
+              <td class="btn">신규</td>
+            </tr>
+            <tr class="">
+              <td>04 소통/참여 > 순환버스 개선제안</td>
+              <td class="t_center">게시판</td>
+              <td><p class="target"><span class='link'>/views/.html</span></p></td>
+              <td class="btn">
+                <a class="btnPc" href="./views/.html" target="_blank">View</a>
+              </td>
+              <td class="t_center"></td>
+              <td class="t_center"></td>
+              <td class="t_center"></td>
+              <td>
+                <ul class="comment"></ul>
+              </td>
+              <td class="btn">
+                <a class="btnPc" href="https://naepo.chungnam.go.kr/napo/board.do?mnu_cd=NAEMENU00021" target="_blank">View</a>
               </td>
             </tr>
             <tr class="">
-              <td>소통/참여 > 순환버스 개선제안</td>
+              <td>04 소통/참여 > 순환버스 개선제안 > 상세</td>
               <td class="t_center">게시판</td>
-              <td><p class="target"><span class='link'>/views/sub/.html</span></p></td>
+              <td><p class="target"><span class='link'>/views/.html</span></p></td>
               <td class="btn">
-                  <a class="btnPc" href="./views/sub/.html" target="_blank">View</a>
+                <a class="btnPc" href="./views/.html" target="_blank">View</a>
               </td>
               <td class="t_center"></td>
               <td class="t_center"></td>
               <td class="t_center"></td>
               <td>
-                  <ul class="comment">
-                      <li></li>
-                  </ul>
+                <ul class="comment"></ul>
+              </td>
+              <td class="btn">
+                <a class="btnPc" href="https://naepo.chungnam.go.kr/napo/board.do?mnu_cd=NAEMENU00021" target="_blank">View</a>
               </td>
             </tr>
           </tbody>

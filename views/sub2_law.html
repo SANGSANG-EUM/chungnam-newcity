@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="meta_viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+    <title>내포신도시</title>
+
+    <!-- JS 파일 연결 -->
+    <script src="../sources/js/jquery-3.6.0.min.js"></script>
+    <script src="../sources/plugin/swiper/swiper-bundle.min.js"></script>
+    <script src="../sources/plugin/matchheight/jquery.matchHeight.js"></script>
+    <script src="../sources/js/normal.js"></script>
+    
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="../sources/plugin/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../sources/css/fonts.css">
+    <link rel="stylesheet" href="../sources/css/common.css">
+    <link rel="stylesheet" href="../sources/css/normal.css">
+    <link rel="stylesheet" href="../sources/css/responsive.css">
+
+    <!-- Favicon { -->
+    <!-- <link rel="shortcut icon" href="/source/img/favicon.ico"> -->
+    <!-- } Favicon -->
+  </head>
+  <body>
+    <!-- Header { -->
+    <div id="header">
+      <div class="container">
+        <div class="inner">
+          <h1 class="hd_logo">
+            <a href="./index.html">
+              <img src="../sources/images/logo.png" alt="충청남도내포신도시">
+            </a>
+          </h1>
+          <nav class="gnb">
+            <ul class="gnb_ul-dp1">
+              <li>
+                <a href="">충남혁신도시 소개</a>
+              </li>
+              <li>
+                <a href="">정보공개</a>
+              </li>
+              <li>
+                <a href="">소식알림</a>
+              </li>
+              <li>
+                <a href="">소통/참여</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hd_rnb">
+            <div class="hd_search">
+              <form action="">
+                <fieldset>
+                  <legend class="sound_only">전체검색메뉴</legend>
+                  <input type="text" class="hd_search-keyword" placeholder="검색어를 입력하세요.">
+                  <button type="submit" class="hd_search-submit" title="검색하기"></button>
+                </fieldset>
+              </form>
+            </div>
+            <div class="mb_nav">
+              <ul class="mb_nav_ul">
+                <li>
+                  <a href="">로그인</a>
+                </li>
+                <li>
+                  <a href="">회원가입</a>
+                </li>
+              </ul>
+            </div>
+            <a href="" class="chungnam_page-link">
+              <img src="../sources/images/chungnam-logo.png" alt="새창열림, 충청남도 홈페이지로 이동">
+            </a>
+            <button type="button" class="all_menu-btn">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } Header -->
+
+    <!-- Contents (status) { -->
+    <div class="contentsWrap sub status">
+      
+      <div id="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs_wrap">
+            <div class="wrapper">
+              <div class="inner">
+                <ul class="breadcrumbs_list">
+                  <li class="breadcrumbs_item breadcrumbs_item-home">
+                    <a href="../views/index.html" title="메인 바로가기">
+                      <img src="../sources/images/home-icon.png" alt="홈 아이콘">
+                    </a>
+                  </li>
+                  <li class="breadcrumbs_item breadcrumbs_item-1dep">
+                    <button class="breadcrumbs_menu">정보공개</button>
+                    <ul class="breadcrumbs_menu-list">
+                      <li class="breadcrumbs_menu-item">
+                        <a href="">충남혁신도시 소개</a>
+                      </li>
+                      <li class="breadcrumbs_menu-item">
+                        <a href="">소식알림</a>
+                      </li>
+                      <li class="breadcrumbs_menu-item">
+                        <a href="">소통/참여</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="breadcrumbs_item breadcrumbs_item-2dep">
+                    <button class="breadcrumbs_menu">관련 법규</button>
+                    <ul class="breadcrumbs_menu-list">
+                      <li class="breadcrumbs_menu-item">
+                        <a href="">추진 현황</a>
+                      </li>
+                      <li class="breadcrumbs_menu-item">
+                        <a href="">개발관련자료</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub_sec sub_sec-title">
+        <div class="container">
+          <div class="wrapper"> 
+            <div class="inner">
+              <div class="sub_titleBox">
+                <p class="f_gmarket sub_title">관련 법규</p>
+                <p class="sub_expl">개발 관련 법규범 및 기준을 확인해보세요.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub_sec dev_sec_1">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="sub_head">
+                <p class="sub_subject">01. 법령</p>
+              </div>
+              <div class="sub_body">
+                <div class="table_wrap">
+                  <table class="table">
+                    <caption>법령에 대한 표로 제목, 제/개정일, 내려받기를 포함</caption>
+                    <colgroup>
+                      <col class="w60">
+                      <col class="w15">
+                      <col class="w15">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>제목</th>
+                        <th>제/개정일</th>
+                        <th>내려받기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="bold left">도청이전을 위한 도시건설 및 지원에 관한 특별법</td>
+                        <td>2016. 12. 27.</td>
+                        <td>
+                          <a href="http://www.chungnam.go.kr/downloadUtil.do?filename=1-1_도청이전법.hwp" class="table_btn table_btn-download">다운로드</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub_sec dev_sec_2">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="sub_head">
+                <p class="sub_subject">02. 조례</p>
+              </div>
+              <div class="sub_body">
+                <div class="table_wrap">
+                  <table class="table">
+                    <caption>조례에 대한 표로 제목, 제/개정일, 내려받기를 포함</caption>
+                    <colgroup>
+                      <col class="w60">
+                      <col class="w15">
+                      <col class="w15">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>제목</th>
+                        <th>제/개정일</th>
+                        <th>내려받기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="bold left">예산군 건축조례</td>
+                        <td>2018. 11. 6.</td>
+                        <td>
+                          <a href="http://www.chungnam.go.kr/downloadUtil.do?filename=2-1_예산군건축조례.hwp" class="table_btn table_btn-download">다운로드</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold left">예산군 군계획 조례</td>
+                        <td>2018. 6. 29.</td>
+                        <td>
+                          <a href="http://www.chungnam.go.kr/downloadUtil.do?filename=2-2_예산군군계획조례.hwp" class="table_btn table_btn-download">다운로드</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold left">예산군 옥외광고물 등의 관리와 옥외광고산업 진흥에 관한 조례</td>
+                        <td>2018. 8. 16.</td>
+                        <td>
+                          <a href="http://www.chungnam.go.kr/downloadUtil.do?filename=2-3_예산군옥외광고물.hwp" class="table_btn table_btn-download">다운로드</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold left">충남도청(내포)신도시 옥외광고물 특정구역 표시강화 및 표시완화 변경 고시(예산군)</td>
+                        <td>2012. 10. 2.</td>
+                        <td>
+                          <a href="http://www.chungnam.go.kr/downloadUtil.do?filename=rd_1370407036.pdf" class="table_btn table_btn-download">다운로드</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold left">충남도청(내포)신도시 옥외광고물 특정구역 표시강화 및 표시완화 변경 고시(홍성군)</td>
+                        <td>2012. 10. 2.</td>
+                        <td>
+                          <a href="http://www.chungnam.go.kr/downloadUtil.do?filename=rd_1370407087.pdf" class="table_btn table_btn-download">다운로드</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold left">충청남도사무소의 소재지 변경에 관한 조례</td>
+                        <td>2006. 3. 20.</td>
+                        <td>
+                          <a href="http://www.chungnam.go.kr/downloadUtil.do?filename=rd_1353983048.hwp" class="table_btn table_btn-download">다운로드</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold left">충청남도 도청 이전 신도시 보상추진협의회 설치 및 운영 조례</td>
+                        <td>2014. 7. 10.</td>
+                        <td>
+                          <a href="http://www.chungnam.go.kr/downloadUtil.do?filename=2-7_보상추진협의회.hwp" class="table_btn table_btn-download">다운로드</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold left">충청남도 도청이전을 위한 도시건설 및 지원에 관한 특별법 시행 조례</td>
+                        <td>2018. 12. 31.</td>
+                        <td>
+                          <a href="http://www.chungnam.go.kr/downloadUtil.do?filename=2-8_도청이전을위한.hwp" class="table_btn table_btn-download">다운로드</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold left">홍성군 건축 조례</td>
+                        <td>2018. 11. 15.</td>
+                        <td>
+                          <a href="http://www.chungnam.go.kr/downloadUtil.do?filename=2-9_홍성군건축조례.hwp" class="table_btn table_btn-download">다운로드</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold left">홍성군 군계획 조례</td>
+                        <td>2018. 9. 17.</td>
+                        <td>
+                          <a href="http://www.chungnam.go.kr/downloadUtil.do?filename=2-10_홍성군군계획조례.hwp" class="table_btn table_btn-download">다운로드</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold left">홍성군 옥외광고물 등 관리조례</td>
+                        <td>2017. 5. 2.</td>
+                        <td>
+                          <a href="http://www.chungnam.go.kr/downloadUtil.do?filename=2-11_홍성군옥외광고물.hwp" class="table_btn table_btn-download">다운로드</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub_sec dev_sec_3">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="sub_head">
+                <p class="sub_subject">03. 규칙</p>
+              </div>
+              <div class="sub_body">
+                <div class="table_wrap">
+                  <table class="table">
+                    <caption>규칙에 대한 표로 제목, 제/개정일, 내려받기를 포함</caption>
+                    <colgroup>
+                      <col class="w60">
+                      <col class="w15">
+                      <col class="w15">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>제목</th>
+                        <th>제/개정일</th>
+                        <th>내려받기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="bold left">충청남도 도청소재 도시건설 특별회계 시행규칙</td>
+                        <td>2018. 12. 31.</td>
+                        <td>
+                          <a href="http://www.chungnam.go.kr/downloadUtil.do?filename=3-1_도청소재도시건설.hwp" class="table_btn table_btn-download">다운로드</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub_sec dev_sec_4">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="sub_head">
+                <p class="sub_subject">04. 기타</p>
+              </div>
+              <div class="sub_body">
+                <div class="table_wrap">
+                  <table class="table">
+                    <caption>기타에 대한 표로 제목, 제/개정일, 내려받기를 포함</caption>
+                    <colgroup>
+                      <col class="w60">
+                      <col class="w15">
+                      <col class="w15">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>제목</th>
+                        <th>제/개정일</th>
+                        <th>내려받기</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="bold left">내포신도시 가로경관 디자인 가이드라인</td>
+                        <td>2017. 12. 22.</td>
+                        <td>
+                          <a href="http://www.chungnam.go.kr/downloadUtil.do?filename=rd_1515543007.pdf" class="table_btn table_btn-download">다운로드</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bold left">내포신도시 건축물의 경관심의 세부운영기준</td>
+                        <td>2018. 1. 10.</td>
+                        <td>
+                          <a href="http://www.chungnam.go.kr/downloadUtil.do?filename=rd_1515542814.hwp" class="table_btn table_btn-download">다운로드</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="evaluation">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="evaluation_wrap">
+                <div class="evaluation_body">
+                  <form action="">
+                    <p class="evaluation_title">이 페이지에서 제공하는 정보에 대하여 만족하십니까?</p>
+                    <ul class="evaluation_list">
+                      <li class="evaluation_item radio_wrap">
+                        <input type="radio" name="eval" id="eval-1">
+                        <label for="eval-1">매우 만족</label>
+                      </li>
+                      <li class="evaluation_item radio_wrap">
+                        <input type="radio" name="eval" id="eval-2">
+                        <label for="eval-2">만족</label>
+                      </li>
+                      <li class="evaluation_item radio_wrap">
+                        <input type="radio" name="eval" id="eval-3">
+                        <label for="eval-3">보통</label>
+                      </li>
+                      <li class="evaluation_item radio_wrap">
+                        <input type="radio" name="eval" id="eval-4">
+                        <label for="eval-4">불만족</label>
+                      </li>
+                      <li class="evaluation_item radio_wrap">
+                        <input type="radio" name="eval" id="eval-5">
+                        <label for="eval-5">매우 불만족</label>
+                      </li>
+                    </ul>
+                    <div class="evaluation_box">
+                      <input type="text" class="evaluation_text">
+                      <button class="evaluation_fin">평가하기</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="evaluation_info">
+                  <p class="evaluation_info-txt"><b>담당부서 : </b>공공기관유치단</p>
+                  <p class="evaluation_info-txt"><b>담당자 : </b>김재준</p>
+                  <p class="evaluation_info-txt"><b>문의전화 : </b>041-635-3388</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- } Contents (status) -->
+
+    <!-- Footer { -->
+    <div id="footer">
+      <div class="ft_related">
+        <div class="container">
+          <div class="wrapper">
+            <div class="ft_related_ct">
+              <p class="f_gmarket ft_related-tit"><img src="../sources/images/realated-site.png" alt="">관련사이트</p>
+              <div class="ft_related-site">
+                <a href="http://www.chungnam.go.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-cn.jpg" alt="충청남도">
+                </a>
+                <a href="https://www.hongseong.go.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-hs.jpg" alt="홍성군">
+                </a>
+                <a href="https://www.yesan.go.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-ys.jpg" alt="예산군">
+                </a>
+                <a href="https://art.chungnam.go.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-literary.jpg" alt="충청남도 문화예술회관">
+                </a>
+                <a href="http://clehrd.or.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-cile.jpg" alt="충청남도 평생교육진흥원">
+                </a>
+                <a href="https://www.cndc.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-cndc.jpg" alt="충청남도 개발공사">
+                </a>
+                <a href="https://www.lh.or.kr/" target="_blank">
+                  <img src="../sources/images/relatied-logo-lh.jpg" alt="한국토지주택공사">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ft_cont">
+        <div class="container">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="ft_cont_lt">
+                <div class="fnb">
+                  <ul class="fnb_ul">
+                    <li>
+                      <a href="http://www.chungnam.go.kr/cnnet/content.do?mnu_cd=CNNMENU02538" target="_blank" class="first">개인정보처리방침</a>
+                    </li>
+                    <li>
+                      <a href="">이용약관</a>
+                    </li>
+                    <li>
+                      <a href="http://www.chungnam.go.kr/dept/memberInfo.do?mnu_cd=SESMENU00003&amp;dept_cd=6441369" target="_blank">공공기관유치단 직원안내</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="chungnam_finfo">
+                  <span class="txt1">[32255] 충청남도 홍성군 홍북읍 충남대로 21 충청남도청</span>
+                  <span class="txt2">대표전화 : 041-120</span>
+                </div>
+                <p class="copyright">Copyrightⓒ CHUNGCHEONGNAM-DO. All rights reserved.</p>
+              </div>
+              <div class="ft_cont_rt">
+                <a href="./index.html" class="ft-logo">
+                  <img src="../sources/images/logo-white.png" alt="충청남도내포신도시">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } Footer -->
+
+    <!-- Top Button { -->
+    <div id="go-top">
+      <a href="#top">
+        <span></span>
+        <span class="sound_only">TOP</span>
+      </a>
+    </div>
+    <!-- } Top Button -->
+  </body>
+</html>

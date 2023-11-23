@@ -1,4 +1,4 @@
-/*초기화*/
+/* 초기화 */
 * {margin:0; padding:0; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; word-break: keep-all;}
 html,body{max-width: 100%; min-height: 100%;}
 html{overflow-x: hidden; -webkit-text-size-adjust: none;}
@@ -14,21 +14,21 @@ table, tr, td { border-collapse: collapse;}
 p{word-break: keep-all;}
 input{border-radius: 0;}
 
-/*폰트 설정 class*/
+/* 폰트 */
 .f_pret{font-family: 'Pretendard', sans-serif;}
 .f_gmarket{font-family: 'GmarketSans', sans-serif; letter-spacing: -1px;}
 
-/*컨텐츠 가이드라인*/
+/* 컨텐츠 영역 */
 .container {padding-left: 60px; padding-right: 60px;}
 .wrapper{width: 1400px; max-width: 100%; margin: 0 auto;}
 
-/*clearfix*/
+/* clearfix */
 .cf:before,
 .cf:after{content: " "; display: table;}
 .cf:after{clear: both;}
 .cf{*zoom: 1;}
 
-/*Column*/
+/* column */
 .i-col-0{font-size: 0;}
 .i-col-1{font-size: 0;}
 .i-col-2{font-size: 0;}
@@ -66,17 +66,17 @@ i.left{transform: rotate(135deg); -webkit-transform: rotate(135deg); -moz-transf
 
 /* input radio */
 .radio_wrap input[type=radio]{display: none;}
-.radio_wrap input[type=radio] + label{display: inline-block; cursor: pointer; position: relative; padding-left: 28px; font-size: 16px; font-weight: 400; color: #333; line-height: 1;}
-.radio_wrap input[type=radio]+ label:before{content: ""; display: inline-block; width: 18px; height: 18px; position: absolute; left: 0; bottom: 0; z-index: 1; border: 1px solid #e4e4e4; border-radius: 50%; background-color: #fff;}
-.radio_wrap input[type=radio]:checked + label:before{border-color: #005e2e;}
-.radio_wrap input[type=radio]:checked + label:after{content: ""; display: inline-block; position: absolute; left: 4px; bottom: 4px; width: 10px; height: 10px; border-radius: 50%; background-color: #005e2e; z-index: 2;}
+.radio_wrap input[type=radio] + label{display: inline-block; cursor: pointer; position: relative; padding-left: 30px; font-size: 16px; font-weight: 300; color: #666; line-height: 1.4;}
+.radio_wrap input[type=radio]+ label:before{content: ""; display: inline-block; width: 20px; height: 20px; position: absolute; left: 0; bottom: 0; z-index: 1; border: 1px solid #b4b4b4; border-radius: 50%; background-color: #fff;}
+.radio_wrap input[type=radio]:checked + label:before{border-color: #089496;}
+.radio_wrap input[type=radio]:checked + label:after{content: ""; display: inline-block; position: absolute; left: 4px; bottom: 4px; width: 14px; height: 14px; border-radius: 50%; background-color: #089496; z-index: 2;}
 
 /* input checkbox */
 .check_wrap input[type=checkbox]{display: none;}
-.check_wrap input[type=checkbox] + label{display: inline-block; cursor: pointer; position: relative; padding-left: 28px; font-size: 16px; font-weight: 400; color: #333; line-height: 1;}
-.check_wrap input[type=checkbox]+ label:before{content: ""; display: inline-block; width: 18px; height: 18px; position: absolute; left: 0; bottom: 0; z-index: 1; border: 1px solid #e4e4e4; border-radius: 0; background-color: #fff;}
-.check_wrap input[type=checkbox]:checked + label:before{border-color: #005e2e;}
-.check_wrap input[type=checkbox]:checked + label:after{content: ""; display: inline-block; position: absolute; left: 4px; bottom: 4px; width: 10px; height: 10px; border-radius: 0; background-color: #005e2e; z-index: 2;}
+.check_wrap input[type=checkbox] + label{display: inline-block; cursor: pointer; position: relative; padding-left: 30px; font-size: 16px; font-weight: 400; color: #333; line-height: 1.4;}
+.check_wrap input[type=checkbox]+ label:before{content: ""; display: inline-block; width: 20px; height: 20px; position: absolute; left: 0; bottom: 0; z-index: 1; border: 1px solid #b4b4b4; border-radius: 0; background-color: #fff;}
+.check_wrap input[type=checkbox]:checked + label:before{border-color: #089496;}
+.check_wrap input[type=checkbox]:checked + label:after{content: ""; display: inline-block; position: absolute; left: 4px; bottom: 4px; width: 10px; height: 10px; border-radius: 0; background-color: #089496; z-index: 2;}
 
 /* cut text */
 .text_row1 {width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
@@ -86,7 +86,7 @@ i.left{transform: rotate(135deg); -webkit-transform: rotate(135deg); -moz-transf
 /* notScroll */
 .notScroll {overflow: hidden;width: 100%;height: 100vh;touch-action:none;}
 
-/* Sound Only (Hidden Text) */
+/* sound only (Hidden) */
 .sound_only {position: absolute; left: 0; top: 0; width: 0; height: 0; font-size: 0; line-height: 0;}
 
 fieldset {border: none;}
