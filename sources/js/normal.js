@@ -139,4 +139,14 @@ $(document).ready(function(){
     }
   });
 
+  // (서브) 편의시설 탭
+  $(".tab_content").hide();
+  $(".tab_content:first").show();
+  $(".tab_item").click(function () {
+    $(".tab_item").removeClass("active");
+    $(this).addClass("active");
+    $(".tab_content").hide()
+    let activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+  });
 });

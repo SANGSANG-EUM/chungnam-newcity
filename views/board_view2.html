@@ -80,8 +80,8 @@
     </div>
     <!-- } Header -->
 
-    <!-- Contents (boardText) { -->
-    <div class="contentsWrap sub boardText">
+    <!-- Contents (boardView) { -->
+    <div class="contentsWrap sub boardView">
       
       <div id="breadcrumbs">
         <div class="container">
@@ -95,27 +95,24 @@
                     </a>
                   </li>
                   <li class="breadcrumbs_item breadcrumbs_item-1dep">
-                    <button class="breadcrumbs_menu">정보공개</button>
+                    <button class="breadcrumbs_menu">소통/참여</button>
                     <ul class="breadcrumbs_menu-list">
                       <li class="breadcrumbs_menu-item">
                         <a href="">충남혁신도시 소개</a>
                       </li>
                       <li class="breadcrumbs_menu-item">
-                        <a href="">소식알림</a>
+                        <a href="">정보공개</a>
                       </li>
                       <li class="breadcrumbs_menu-item">
-                        <a href="">소통/참여</a>
+                        <a href="">소식알림</a>
                       </li>
                     </ul>
                   </li>
                   <li class="breadcrumbs_item breadcrumbs_item-2dep">
-                    <button class="breadcrumbs_menu">개발관련자료</button>
+                    <button class="breadcrumbs_menu">순환버스 개선제안</button>
                     <ul class="breadcrumbs_menu-list">
                       <li class="breadcrumbs_menu-item">
-                        <a href="">추진 현황</a>
-                      </li>
-                      <li class="breadcrumbs_menu-item">
-                        <a href="">관련법규</a>
+                        <a href="">관련 부서 안내</a>
                       </li>
                     </ul>
                   </li>
@@ -130,205 +127,138 @@
         <div class="container">
           <div class="wrapper"> 
             <div class="inner">
-              <div class="sub_titleBox sub_titleBox-board">
-                <p class="f_gmarket sub_title">개발관련자료</p>
-                <p class="sub_expl">충남혁신도시의 개발 자료를 제공하고 있습니다.</p>
+              <div class="sub_titleBox sub_titleBox-view">
+                <p class="f_gmarket sub_title">순환버스 개선 제안</p>
+                <p class="sub_expl">충남혁신도시의 순환버스를 안내드립니다.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="sub_sec text_sec_1">
+      <div class="sub_sec view_sec_1">
         <div class="container">
           <div class="wrapper">
             <div class="inner">
               <div class="sub_body">
-                <div class="board_head">
-                  <div class="board_sch">
-                    <form action="">
-                      <input type="text" name="sch_word" id="sch_word" class="sch_word" placeholder="검색어를 입력해주세요.">
-                      <label for="sch_word">검색어</label>
-                      <button type="submit" class="sch_btn">검색</button>
-                    </form>
+                <div class="view_wrap">
+                  <div class="view_head">
+                    <div class="view_title_box">
+                      <p class="view_title">사용자 등록글 제목 영역입니다.</p>
+                      <!-- 비밀글일 경우 노출 { -->
+                      <img src="../sources/images/lock-icon.png" alt="비밀글 아이콘">
+                      <!-- } 비밀글일 경우 노출 -->
+                    </div>
+                    <div class="view_info_box">
+                      <ul class="view_info_list">
+                        <li class="view_info_item">
+                          <span class="view_info_txt-1">작성자</span>
+                          <p class="view_info_txt-2">김**</p>
+                        </li>
+                        <li class="view_info_item">
+                          <span class="view_info_txt-1">조회수</span>
+                          <p class="view_info_txt-2">5</p>
+                        </li>
+                      </ul>
+                      <p class="view_info_date">2023-09-30</p>
+                    </div>
                   </div>
-                  <div class="board_cnt">
-                    <p class="board_cnt-text">전체 <span>46개</span></p>
-                    <p class="board_cnt-text">현재 페이지 <span>1/5</span></p>
+                  <div class="view_body">
+                    <div class="view_content">
+                      작성 내용이 표기됩니다. 작성 내용이 표기됩니다. <br/>
+                      작성 내용이 표기됩니다. 작성 내용이 표기됩니다. <br/>
+                      작성 내용이 표기됩니다. 작성 내용이 표기됩니다. <br/>
+                      작성 내용이 표기됩니다. 작성 내용이 표기됩니다. <br/>
+                      작성 내용이 표기됩니다. 작성 내용이 표기됩니다. 
+                    </div>
+                    <!-- 첨부파일 있을 경우 노출 { -->
+                    <div class="view_file_wrap">
+                      <div class="view_file_head">
+                        <p class="view_file_title">첨부파일</p>
+                      </div>
+                      <div class="view_file_body">
+                        <ul class="view_file_list">
+                          <!-- 파일 loop { -->
+                          <li class="view_file_item">
+                            <a href="" class="view_file_download">첨부파일명표기1.pdf</a>
+                            <a href="" class="view_file_link">
+                              <img src="../sources/images/sch-icon-gray.png" alt="돋보기 아이콘">미리보기
+                            </a>
+                          </li>
+                          <!-- } 파일 loop -->
+                          <li class="view_file_item">
+                            <a href="" class="view_file_download">첨부파일명표기2.pdf</a>
+                            <a href="" class="view_file_link">
+                              <img src="../sources/images/sch-icon-gray.png" alt="돋보기 아이콘">미리보기
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- } 첨부파일 있을 경우 노출 -->
                   </div>
-                </div>
-                <div class="table_wrap">
-                  <table class="table">
-                    <caption>번호, 제목, 작성일, 첨부, 조회수를 포함</caption>
-                    <colgroup>
-                      <col class="w5">
-                      <col class="w50">
-                      <col class="w10">
-                      <col class="w5">
-                      <col class="w10">
-                    </colgroup>
-                    <thead>
-                      <tr>
-                        <th>번호</th>
-                        <th>제목</th>
-                        <th>작성일</th>
-                        <th>첨부</th>
-                        <th>조회수</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>45</td>
-                        <td class="title bold left">
-                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
-                        </td>
-                        <td>2023-09-30</td>
-                        <td>
-                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
-                        </td>
-                        <td>3500</td>
-                      </tr>
-                      <tr>
-                        <td>44</td>
-                        <td class="title bold left">
-                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
-                        </td>
-                        <td>2023-09-30</td>
-                        <td>
-                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
-                        </td>
-                        <td>3500</td>
-                      </tr>
-                      <tr>
-                        <td>43</td>
-                        <td class="title bold left">
-                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
-                        </td>
-                        <td>2023-09-30</td>
-                        <td>
-                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
-                        </td>
-                        <td>3500</td>
-                      </tr>
-                      <tr>
-                        <td>42</td>
-                        <td class="title bold left">
-                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
-                        </td>
-                        <td>2023-09-30</td>
-                        <td>
-                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
-                        </td>
-                        <td>3500</td>
-                      </tr>
-                      <tr>
-                        <td>41</td>
-                        <td class="title bold left">
-                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
-                        </td>
-                        <td>2023-09-30</td>
-                        <td>
-                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
-                        </td>
-                        <td>3500</td>
-                      </tr>
-                      <tr>
-                        <td>40</td>
-                        <td class="title bold left">
-                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
-                        </td>
-                        <td>2023-09-30</td>
-                        <td>
-                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
-                        </td>
-                        <td>3500</td>
-                      </tr>
-                      <tr>
-                        <td>39</td>
-                        <td class="title bold left">
-                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
-                        </td>
-                        <td>2023-09-30</td>
-                        <td>
-                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
-                        </td>
-                        <td>3500</td>
-                      </tr>
-                      <tr>
-                        <td>38</td>
-                        <td class="title bold left">
-                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
-                        </td>
-                        <td>2023-09-30</td>
-                        <td>
-                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
-                        </td>
-                        <td>3500</td>
-                      </tr>
-                      <tr>
-                        <td>37</td>
-                        <td class="title bold left">
-                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
-                        </td>
-                        <td>2023-09-30</td>
-                        <td>
-                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
-                        </td>
-                        <td>3500</td>
-                      </tr>
-                      <tr>
-                        <td>36</td>
-                        <td class="title bold left">
-                          <a href="">지구단위계획(18차) 보고서 및 시행지침</a>
-                        </td>
-                        <td>2023-09-30</td>
-                        <td>
-                          <img src="../sources/images/file-icon.png" alt="첨부파일 아이콘">
-                        </td>
-                        <td>3500</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="board_foot">
-                  <div class="pagination">
-                    <ul class="pagination_list">
-                      <li class="pagination_item pagination_item-arr pagination_item-arr_first">
-                        <a href="" class="pagination_link">
-                          <img src="../sources/images/arrow-first.png" alt="처음">
-                        </a>
-                      </li>
-                      <li class="pagination_item pagination_item-arr pagination_item-arr_prev">
-                        <a href="" class="pagination_link">
-                          <img src="../sources/images/arrow-prev.png" alt="이전">
-                        </a>
-                      </li>
-                      <li class="pagination_item pagination_item-num">
-                        <a href="" class="pagination_link active">1</a>
-                      </li>
-                      <li class="pagination_item pagination_item-num">
-                        <a href="" class="pagination_link">2</a>
-                      </li>
-                      <li class="pagination_item pagination_item-num">
-                        <a href="" class="pagination_link">3</a>
-                      </li>
-                      <li class="pagination_item pagination_item-num">
-                        <a href="" class="pagination_link">4</a>
-                      </li>
-                      <li class="pagination_item pagination_item-num">
-                        <a href="" class="pagination_link">5</a>
-                      </li>
-                      <li class="pagination_item pagination_item-arr pagination_item-arr_next">
-                        <a href="" class="pagination_link">
-                          <img src="../sources/images/arrow-next.png" alt="다음">
-                        </a>
-                      </li>
-                      <li class="pagination_item pagination_item-arr pagination_item-arr_last">
-                        <a href="" class="pagination_link">
-                          <img src="../sources/images/arrow-last.png" alt="마지막">
-                        </a>
-                      </li>
-                    </ul>
+                  <div class="view_foot">
+                    <!-- 답변 있을 경우 노출 { -->
+                    <div class="view_wrap view_wrap-reply">
+                      <div class="view_head">
+                        <div class="view_title_box">
+                          <p class="view_title">안녕하세요. 답변 드립니다.</p>
+                        </div>
+                        <div class="view_info_box">
+                          <ul class="view_info_list">
+                            <li class="view_info_item">
+                              <span class="view_info_txt-1">작성자</span>
+                              <p class="view_info_txt-2">교통정책과</p>
+                            </li>
+                            <li class="view_info_item">
+                              <span class="view_info_txt-1">이메일</span>
+                              <p class="view_info_txt-2">pluslyh@korea.kr</p>
+                            </li>
+                          </ul>
+                          <p class="view_info_date">2023-09-30</p>
+                        </div>
+                      </div>
+                      <div class="view_body">
+                        <div class="view_content">
+                          답변 내용이 표기됩니다. 답변 내용이 표기됩니다. <br/>
+                          답변 내용이 표기됩니다. 답변 내용이 표기됩니다. <br/>
+                          답변 내용이 표기됩니다. 답변 내용이 표기됩니다. <br/>
+                          답변 내용이 표기됩니다. 답변 내용이 표기됩니다. <br/>
+                          답변 내용이 표기됩니다. 답변 내용이 표기됩니다. 
+                        </div>
+                        <!-- 첨부파일 있을 경우 노출 { -->
+                        <div class="view_file_wrap">
+                          <div class="view_file_head">
+                            <p class="view_file_title">첨부파일</p>
+                          </div>
+                          <div class="view_file_body">
+                            <ul class="view_file_list">
+                              <!-- 파일 loop { -->
+                              <li class="view_file_item">
+                                <a href="" class="view_file_download">첨부파일명표기1.pdf</a>
+                                <a href="" class="view_file_link">
+                                  <img src="../sources/images/sch-icon-gray.png" alt="돋보기 아이콘">미리보기
+                                </a>
+                              </li>
+                              <!-- } 파일 loop -->
+                              <li class="view_file_item">
+                                <a href="" class="view_file_download">첨부파일명표기2.pdf</a>
+                                <a href="" class="view_file_link">
+                                  <img src="../sources/images/sch-icon-gray.png" alt="돋보기 아이콘">미리보기
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- } 첨부파일 있을 경우 노출 -->
+                      </div>
+                    </div>
+                    <!-- } 답변 있을 경우 노출 -->
+                    <div class="list_wrap">
+                      <a href="" class="list_btn">
+                        <img src="../sources/images/list-icon.png" alt="목록 아이콘">목록으로
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -385,7 +315,7 @@
       </div>
 
     </div>
-    <!-- } Contents (boardText) -->
+    <!-- } Contents (boardView) -->
 
     <!-- Footer { -->
     <div id="footer">
