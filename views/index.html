@@ -36,15 +36,59 @@
             <ul class="gnb_ul-dp1">
               <li>
                 <a href="">충남혁신도시 소개</a>
+                <ul class="gnb_ul-dp2">
+                  <li>
+                    <a href="">개요 및 연혁</a>
+                  </li>
+                  <li>
+                    <a href="">개발방향 및 특성화 계획</a>
+                  </li>
+                  <li>
+                    <a href="">토지이용계획도</a>
+                  </li>
+                  <li>
+                    <a href="">편의시설</a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a href="">정보공개</a>
+                <ul class="gnb_ul-dp2">
+                  <li>
+                    <a href="">추진 현황</a>
+                  </li>
+                  <li>
+                    <a href="">개발관련자료</a>
+                  </li>
+                  <li>
+                    <a href="">관련법규</a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a href="">소식알림</a>
+                <ul class="gnb_ul-dp2">
+                  <li>
+                    <a href="">공지사항</a>
+                  </li>
+                  <li>
+                    <a href="">영상자료</a>
+                  </li>
+                  <li>
+                    <a href="">홍보책자</a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a href="">소통/참여</a>
+                <ul class="gnb_ul-dp2">
+                  <li>
+                    <a href="">관련 부서 안내</a>
+                  </li>
+                  <li>
+                    <a href="">순환버스 개선제안</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
@@ -75,6 +119,71 @@
               <span></span>
             </button>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="allMenu">
+      <div class="container">
+        <div class="wrapper">
+          <ul class="allMenu_ul-dp1">
+            <li>
+              <a href="">충남혁신도시 소개</a>
+              <ul class="allMenu_ul-dp2">
+                <li>
+                  <a href="">개요 및 연혁</a>
+                </li>
+                <li>
+                  <a href="">개발방향 및 특성화 계획</a>
+                </li>
+                <li>
+                  <a href="">토지이용계획도</a>
+                </li>
+                <li>
+                  <a href="">편의시설</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">정보공개</a>
+              <ul class="allMenu_ul-dp2">
+                <li>
+                  <a href="">추진 현황</a>
+                </li>
+                <li>
+                  <a href="">개발관련자료</a>
+                </li>
+                <li>
+                  <a href="">관련법규</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">소식알림</a>
+              <ul class="allMenu_ul-dp2">
+                <li>
+                  <a href="">공지사항</a>
+                </li>
+                <li>
+                  <a href="">영상자료</a>
+                </li>
+                <li>
+                  <a href="">홍보책자</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">소통/참여</a>
+              <ul class="allMenu_ul-dp2">
+                <li>
+                  <a href="">관련 부서 안내</a>
+                </li>
+                <li>
+                  <a href="">순환버스 개선제안</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -502,6 +611,24 @@
       </div>
     </div>
     <!-- } (모바일)조성현황 지도 popup -->
+
+    <script>
+    $(document).ready(function(){
+      $(".gnb_ul-dp1 > li").on('mouseover', function(){
+        $('.gnb_ul-dp2').hide();
+        $(this).find('.gnb_ul-dp2').show();
+      })
+
+      $("#header").on('mouseleave', function(){
+        $('.gnb_ul-dp2').hide();
+      })
+
+      $(".all_menu-btn").on('click', function(){
+        $(this).toggleClass('act');
+        $(".allMenu").toggle();
+      })
+    })
+    </script>
 
   </body>
 </html>

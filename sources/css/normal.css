@@ -25,8 +25,13 @@
 
 .gnb {}
 .gnb_ul-dp1 {display: flex; flex-flow: row wrap; gap: 0 100px;}
-.gnb_ul-dp1  > li {}
+.gnb_ul-dp1  > li {position: relative;}
 .gnb_ul-dp1  > li > a {display: block; font-size: 20px; font-weight: 400; color: #0f0f0f;}
+
+.gnb_ul-dp2 {display: none; position: absolute; top: 60px; left: 50%; z-index: 100; width: 200px; padding: 16px 0; border-radius: 10px; text-align: center; transform: translateX(-50%); background-color: #fff; box-shadow: 5px 0 15px rgba(4,0,0,0.1);}
+.gnb_ul-dp2 > li {}
+.gnb_ul-dp2 > li > a {display: block; font-size: 17px; font-weight: 300; color: #666; line-height: 2.47;}
+.gnb_ul-dp2 > li > a:hover {color: var(--main-color);}
 
 .hd_rnb {display: flex; flex-flow: row wrap; align-items: center;}
 
@@ -47,6 +52,20 @@
 .all_menu-btn span {display: inline-block; width: 18px; height: 3px; background-color: #333;}
 .all_menu-btn span:before {content: ""; display: block; position: absolute; top: 0; left: 0; z-index: 1; width: 100%; height: 3px; background-color: #333;}
 .all_menu-btn span:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; z-index: 1; width: 100%; height: 3px; background-color: #333;}
+
+.all_menu-btn.act {}
+.all_menu-btn.act span{background-color: rgba(255,255,255,0);}
+.all_menu-btn.act span:before{top: 8px; transform: rotate(45deg);}
+.all_menu-btn.act span:after{bottom: 8px; transform: rotate(-45deg);}
+
+.allMenu {display: none; position: absolute; top: 100px; left: 0; z-index: 150; width: 100%; padding: 70px 50px 150px; text-align: center; background-color: #fff;}
+.allMenu_ul-dp1 {display: flex; gap: 40px;}
+.allMenu_ul-dp1 > li {width: 25%;}
+.allMenu_ul-dp1 > li > a {display: flex; align-items: center; justify-content: center; height: 65px; border-radius: 10px; font-size: 20px; font-weight: 500; color: #fff; background-color: var(--main-color);}
+
+.allMenu_ul-dp2 {margin-top: 10px;}
+.allMenu_ul-dp2 > li:not(:first-child) {margin-top: 6px;}
+.allMenu_ul-dp2 > li > a {display: flex; align-items: center; justify-content: center; height: 65px; border-radius: 10px; font-size: 18px; font-weight: 300; color: #666; border: 1px solid #e6e6e6;}
 
 /* Footer */
 .ft_related {background-color: #f7f8fb;}
@@ -339,6 +358,17 @@
 .step_box-text::before {content:"-"; position: absolute; left: 0; top: 0;}
 .step_box-text.none {padding-left: 0;}
 .step_box-text.none::before {display: none;}
+
+.his_wrap {position: relative; padding: 30px 0 55px; border-top: 1px solid #888; border-bottom: 1px solid #888;}
+.his_wrap:before {content: ""; display: block; position: absolute; top: 38px; left: 110px; height: calc(100% - 38px); border-left: 1px dashed #ddd;}
+.his_list {position: relative; display: flex; flex-flow: row wrap; align-items: flex-start;}
+.his_list:after {content: ""; display: block; position: absolute; top: 8px; left: 108px; width: 5px; height: 13px; background-color: var(--main-color);}
+.his_list:not(:first-child) {margin-top: 35px;}
+.his_cont-list {display: flex; flex-flow: row wrap; align-items: flex-start;}
+.his_cont-list:not(:first-child) {margin-top: 10px;}
+.his-year {position: relative; width: 110px; padding-left: 10px; font-size: 20px; font-weight: 600; color: var(--main-color);}
+.his-date {display: block; width: 165px; font-size: 18px; font-weight: 400; color: #0f0f0f; line-height: 1.5; text-align: center;}
+.his-txt {display: block; width: calc(100% - 165px); padding-left: 5px; font-size: 18px; font-weight: 300; color: #666; line-height: 1.5;}
 
 /* > 토지이용계획도(land) */
 .point_list {margin: -15px -20px;}
