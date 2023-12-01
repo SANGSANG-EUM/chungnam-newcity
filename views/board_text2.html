@@ -255,133 +255,134 @@
                     <p class="board_cnt-text">현재 페이지 <span>1/5</span></p>
                   </div>
                 </div>
-                <div class="table_wrap">
+                <div class="table_wrap table_wrap-text table_wrap-bus">
                   <table class="table">
                     <caption>번호, 제목, 작성일, 첨부, 조회수를 포함</caption>
                     <colgroup>
-                      <col class="w5">
+                      <col class="w5 num">
                       <col class="w50">
                       <col class="w5">
                       <col class="w10">
-                      <col class="w5">
+                      <col class="w5 cnt">
                       <col class="w10">
                     </colgroup>
                     <thead>
                       <tr>
-                        <th>번호</th>
-                        <th>제목</th>
+                        <th class="num">번호</th>
+                        <th class="m-left">제목</th>
                         <th>작성자</th>
                         <th>작성일</th>
-                        <th>조회수</th>
-                        <th>처리상태</th>
+                        <th class="cnt">조회수</th>
+                        <th class="m-right">처리상태</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <!-- 
-                      * 처리상태(디폴트/대기중) : status 클래스 추가
-                      * 처리상태(답변완료) : status 클래스 + finish 클래스 추가
-                      -->
                       <tr>
-                        <td>45</td>
+                        <td class="num">45</td>
                         <td class="title bold left">
                           <a href="">사용자 등록글 제목 영역입니다.</a>
                           <!-- 비밀글일 경우 노출 { -->
                           <img src="../sources/images/lock-icon.png" alt="비밀글 아이콘" class="secret_icon">
                           <!-- } 비밀글일 경우 노출 -->
                         </td>
-                        <td>김**</td>
-                        <td>2023-09-30</td>
-                        <td>3500</td>
+                        <td class="name">김**</td>
+                        <td class="date">2023-09-30</td>
+                        <td class="cnt">3500</td>
                         <td class="status finish">답변완료</td>
+                        <!-- 
+                        등록된 글의 상태값에 따라 다른 class 추가 필요
+                        * 처리상태(디폴트/대기중) : status 클래스 추가
+                        * 처리상태(답변완료) : status 클래스 + finish 클래스 추가
+                        -->
                       </tr>
                       <tr>
-                        <td>45</td>
+                        <td class="num">45</td>
                         <td class="title bold left">
                           <a href="">사용자 등록글 제목 영역입니다.</a>
                         </td>
-                        <td>김**</td>
-                        <td>2023-09-30</td>
-                        <td>3500</td>
+                        <td class="name">김**</td>
+                        <td class="date">2023-09-30</td>
+                        <td class="cnt">3500</td>
                         <td class="status">대기중</td>
                       </tr>
                       <tr>
-                        <td>45</td>
+                        <td class="num">45</td>
                         <td class="title bold left">
                           <a href="">사용자 등록글 제목 영역입니다.</a>
                         </td>
-                        <td>김**</td>
-                        <td>2023-09-30</td>
-                        <td>3500</td>
+                        <td class="name">김**</td>
+                        <td class="date">2023-09-30</td>
+                        <td class="cnt">3500</td>
                         <td class="status">대기중</td>
                       </tr>
                       <tr>
-                        <td>45</td>
+                        <td class="num">45</td>
                         <td class="title bold left">
                           <a href="">사용자 등록글 제목 영역입니다.</a>
                         </td>
-                        <td>김**</td>
-                        <td>2023-09-30</td>
-                        <td>3500</td>
+                        <td class="name">김**</td>
+                        <td class="date">2023-09-30</td>
+                        <td class="cnt">3500</td>
                         <td class="status">대기중</td>
                       </tr>
                       <tr>
-                        <td>45</td>
+                        <td class="num">45</td>
                         <td class="title bold left">
                           <a href="">사용자 등록글 제목 영역입니다.</a>
                         </td>
-                        <td>김**</td>
-                        <td>2023-09-30</td>
-                        <td>3500</td>
+                        <td class="name">김**</td>
+                        <td class="date">2023-09-30</td>
+                        <td class="cnt">3500</td>
                         <td class="status">대기중</td>
                       </tr>
                       <tr>
-                        <td>45</td>
+                        <td class="num">45</td>
                         <td class="title bold left">
                           <a href="">사용자 등록글 제목 영역입니다.</a>
                         </td>
-                        <td>김**</td>
-                        <td>2023-09-30</td>
-                        <td>3500</td>
+                        <td class="name">김**</td>
+                        <td class="date">2023-09-30</td>
+                        <td class="cnt">3500</td>
                         <td class="status">대기중</td>
                       </tr>
                       <tr>
-                        <td>45</td>
+                        <td class="num">45</td>
                         <td class="title bold left">
                           <a href="">사용자 등록글 제목 영역입니다.</a>
                         </td>
-                        <td>김**</td>
-                        <td>2023-09-30</td>
-                        <td>3500</td>
+                        <td class="name">김**</td>
+                        <td class="date">2023-09-30</td>
+                        <td class="cnt">3500</td>
                         <td class="status">대기중</td>
                       </tr>
                       <tr>
-                        <td>45</td>
+                        <td class="num">45</td>
                         <td class="title bold left">
                           <a href="">사용자 등록글 제목 영역입니다.</a>
                         </td>
-                        <td>김**</td>
-                        <td>2023-09-30</td>
-                        <td>3500</td>
+                        <td class="name">김**</td>
+                        <td class="date">2023-09-30</td>
+                        <td class="cnt">3500</td>
                         <td class="status">대기중</td>
                       </tr>
                       <tr>
-                        <td>45</td>
+                        <td class="num">45</td>
                         <td class="title bold left">
                           <a href="">사용자 등록글 제목 영역입니다.</a>
                         </td>
-                        <td>김**</td>
-                        <td>2023-09-30</td>
-                        <td>3500</td>
+                        <td class="name">김**</td>
+                        <td class="date">2023-09-30</td>
+                        <td class="cnt">3500</td>
                         <td class="status">대기중</td>
                       </tr>
                       <tr>
-                        <td>45</td>
+                        <td class="num">45</td>
                         <td class="title bold left">
                           <a href="">사용자 등록글 제목 영역입니다.</a>
                         </td>
-                        <td>김**</td>
-                        <td>2023-09-30</td>
-                        <td>3500</td>
+                        <td class="name">김**</td>
+                        <td class="date">2023-09-30</td>
+                        <td class="cnt">3500</td>
                         <td class="status">대기중</td>
                       </tr>
                     </tbody>

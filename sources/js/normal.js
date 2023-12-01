@@ -8,6 +8,14 @@ function numberCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
+// 100vh 오류 수정
+function setScreenSize() {
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+setScreenSize();
+window.addEventListener('resize', setScreenSize);
+
 // (공통) 팝업 열기
 function popup(id) {
   const popupId = $('#'+id);
@@ -40,6 +48,47 @@ $(document).ready(function(){
     const popupOri = $(this).closest('.popup');
     popupOri.find('.popup_wrap').css({'margin-top':'70px'});
     popupOri.fadeOut(300); 
+  });
+  
+  // (공통) 메뉴 오버
+  $('.gnb_ul-dp1 > li').on('mouseenter', function(){
+    $('.gnb_ul-dp2').stop().slideUp();
+    $(this).find('.gnb_ul-dp2').stop().slideDown();
+  });
+
+  $('#header').on('mouseleave', function(){
+    $('.gnb_ul-dp2').stop().slideUp();
+  });
+
+  $('.all_menu-btn').on('click', function(){
+    $(this).toggleClass('act');
+    $('.allMenu').slideToggle();
+    
+    const screenWidth_in = screen.width;
+    if(screenWidth_in < 768) {
+      $('html, body').toggleClass('scrollLock');
+    }
+  });
+
+  // (공통) 모바일용 검색
+  $('.hd_search-mobile').on('click', function(){
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $(this).siblings().slideUp();
+    } else {
+      $(this).addClass('active');
+      $(this).siblings().slideDown();
+    }
+  });
+
+  $('html').on('click', function (e) {
+    const screenWidth_in = screen.width;
+    if(screenWidth_in < 768) {
+      if($(e.target).parents('.hd_search').length < 1 && !$(e.target).hasClass('hd_search')){  
+        $('.hd_search-mobile').removeClass('active');
+        $('.hd_search form').slideUp();
+      }
+    }
   });
 
   // (메인) 조성현황 버튼 클릭시 지도 이미지 변환
@@ -133,20 +182,20 @@ $(document).ready(function(){
   });
 
   $(document).on('mouseup focusout', function (e) {
-    if ($(".breadcrumbs_list").has(e.target).length === 0) {
+    if ($('.breadcrumbs_list').has(e.target).length === 0) {
       $('.breadcrumbs_menu-list').removeClass('active');
       $('.breadcrumbs_menu').removeClass('active');
     }
   });
 
   // (서브) 편의시설 탭
-  $(".tab_content").hide();
-  $(".tab_content:first").show();
-  $(".tab_item").click(function () {
-    $(".tab_item").removeClass("active");
-    $(this).addClass("active");
-    $(".tab_content").hide()
-    let activeTab = $(this).attr("rel");
-    $("#" + activeTab).fadeIn();
+  $('.tab_content').hide();
+  $('.tab_content:first').show();
+  $('.tab_item').click(function () {
+    $('.tab_item').removeClass('active');
+    $(this).addClass('active');
+    $('.tab_content').hide()
+    let activeTab = $(this).attr('rel');
+    $('#' + activeTab).fadeIn();
   });
 });

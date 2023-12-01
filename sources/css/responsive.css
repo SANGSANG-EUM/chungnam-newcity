@@ -1,6 +1,11 @@
 @media screen and (max-width:1800px){
   /* Header */
   .gnb_ul-dp1 {gap: 0 60px;}
+
+  /* Sub */
+  /* > 개발방향 및 특성화계획 */
+  .plan_list::after {max-width: calc(100% + 200px);}
+
 } /*@media End*/
 
 @media screen and (max-width:1700px){
@@ -24,6 +29,11 @@
 
   .main_plan-slider .swiper-prev {margin-left: -155px;}
   .main_plan-slider .swiper-next {margin-right: -155px;}
+
+  /* Sub */
+  /* > 개발방향 및 특성화계획 */
+  .plan_list::after {max-width: calc(100% + 80px);}
+
 } /*@media End*/
 
 @media screen and (max-width:1440px){
@@ -33,6 +43,8 @@
   .hd_logo > a {width: 250px;}
   .gnb_ul-dp1 {gap: 0 20px;}
   .gnb_ul-dp1 > li > a {font-size: 16px;}
+  .gnb_ul-dp2 {top: 50px; width: 180px;}
+  .gnb_ul-dp2 > li > a {font-size: 15px;}
   .hd_search {width: 200px;}
   .hd_search-keyword {height: 40px; padding: 0 40px 0 10px; font-size: 14px;}
   .hd_search-submit {width: 40px; height: 40px;}
@@ -94,6 +106,18 @@
   .main_pr_lt {width: 420px;}
   .main_pr_rt {width: calc(100% - 420px); padding-left: 50px;}
   .main_pr .prVideo_wrap {padding: 25px 30px 50px;}
+  
+  /* Sub */
+  /* > 개발방향 및 특성화계획 */
+  .plan_inner {width: 300px; max-width: 95%;}
+  .plan_img {max-width: 100%;}
+
+  /* > 편의시설 소개 */
+  .amenities_sec_1.sub_sec {margin-bottom: 80px;}
+  .tab_item {margin-bottom: 20px;}
+  .amenities_map_box {width: 50%; padding: 50px;}
+  .amenities_txt_box {width: 50%; padding-left: 50px; padding-right: 50px;}
+
 } /*@media End*/
 
 @media screen and (max-width:1280px){
@@ -106,11 +130,15 @@
   .hd_logo > a {width: 180px;}
   .gnb_ul-dp1 {gap: 0 15px;}
   .gnb_ul-dp1 > li > a {font-size: 15px;}
+  .gnb_ul-dp2 > li > a {font-size: 14px; line-height: 2;}
   .hd_search {width: 150px;}
   .hd_search-keyword {font-size: 12px;}
   .hd_search-submit {background-size: 16px auto;}
   .mb_nav {margin-left: 10px;}
   .chungnam_page-link {margin: 0 10px;}
+
+  .allMenu_ul-dp1 {gap: 20px;}
+  .allMenu {top: 80px; padding: 30px 20px 50px;}
 
   /* Footer */
   .ft_related_ct {height: 80px;}
@@ -176,6 +204,76 @@
   .main_pr .prVideo_ct {gap: 20px;}
   .main_pr .prVideo-item {width: calc(50% - 10px);}
   .main_pr .prVideo-name {margin-top: 10px; font-size: 16px;}
+
+  /* Sub */
+  .sub_title {font-size: 34px;}
+  .sub_slogan {margin-bottom: 60px; font-size: 30px;}
+  .sub_subject {font-size: 28px;}
+
+  .gray_list {margin: -10px;}
+  .gray_item {padding: 10px;}
+  .gray_box {padding: 20px 25px; border-radius: 15px;}
+  .gray_txt-1 {font-size: 22px;}
+
+  /* > 개요 및 연혁 */
+  .step_title {font-size: 24px;}
+  .step_box {padding-right: 20px;}
+  
+  .gray_txt-3 span {width: 70px;}
+  .gray_txt-3 p {width: calc(100% - 70px);}
+  
+  /* > 개발방향 및 특성화계획 */
+  .gray_list-plan .gray_item {padding: 10px;}
+  .gray_bg-text {font-size: 90px;}
+  .gray_bg-text::after {display: none;}
+
+  .plan_slogan {padding-top: 10px; font-size: 44px;}
+  .plan_item {padding: 30px 0;}
+  .plan_tit {font-size: 22px;}
+
+  /* > 토지이용계획도 */
+  .point_title {font-size: 22px;}
+  .point_text {margin-top: 10px;}
+
+  .glance_title {line-height: 1.3;}
+  .glance_btn_box {padding-right: 0;}
+  
+  /* > 편의시설 소개 */
+  .amenities_sec_1.sub_sec {margin-bottom: 40px;}
+  .amenities_map_box {padding: 40px;}
+  .amenities_txt_box {padding-left: 40px; padding-right: 40px;}
+  .amenities_title {font-size: 22px;}
+  .amenities_table th {height: 50px;}
+  .amenities_thumb_item {width: 33.3333%;}
+
+  /* > 게시판 공통 */
+  .board_head {display: flex; align-items: end; flex-direction: row-reverse; justify-content: space-between; margin-bottom: 15px;}
+  .board_sch {position: relative; right: inherit; top: inherit;}
+  .board_cnt {margin: 0 -14px;}
+
+  .view_head {padding: 22px 10px 20px;}
+  .view_title_box {margin-bottom: 8px;}
+  .view_content {padding: 20px 10px;}
+  .view_file_wrap {padding: 15px 10px;}
+
+  .view_wrap-reply .view_head {padding: 30px;}
+  .view_wrap-reply .view_content {padding-left: 30px; padding-right: 30px;}
+  .view_wrap-reply .view_file_wrap {padding-left: 30px; padding-right: 30px;}
+
+  /* > 영상자료 */
+  .video_list {margin: -20px -15px;}
+  .video_item {padding: 20px 15px;}
+  .video_title {margin-top: 12px;}
+  .video_date {margin-top: 3px;}
+  
+  /* > 홍보책자 */
+  .ebook_list {margin: -30px;}
+  .ebook_item {padding: 30px;}
+  
+  /* > 순환버스 개선 제안 */
+  .bus_box {padding: 20px;}
+  .bus_head {margin-bottom: 10px;}
+
 } /*@media End*/
 
 @media screen and (max-width:1023px){
@@ -184,6 +282,10 @@
   /* Header */
   #header {height: 80px;}
   .gnb {display: none;}
+
+  .allMenu_ul-dp1 {gap: 15px;}
+  .allMenu_ul-dp1 > li > a {height: 60px; font-size: 18px;}
+  .allMenu_ul-dp2 > li > a {height: 55px; font-size: 16px;}
 
   /* Footer */
   .ft_related_ct {display: block; height: auto; padding: 15px 0;}
@@ -251,13 +353,132 @@
   .main_pr .prVideo_ct {gap: 10px; margin-top: 15px;}
   .main_pr .prVideo-item {width: calc(50% - 5px);}
   .main_pr .prVideo-name {margin-top: 5px; font-size: 14px;}
-  /* .main_pr .prVideo_ct {flex-flow: column wrap;}
-  .main_pr .prVideo-item {width: 100%;} */
+
+  /* Sub */
+  .sub_sec {margin-bottom: 60px;}
+  .sub_head {margin-bottom: 10px;}
+  .inner_division .sub_head {display: block; width: 100%; margin-bottom: 10px;}
+  .inner_division .sub_body {display: block; width: 100%;}
+
+  #breadcrumbs {margin-bottom: 70px;}
+  .breadcrumbs_wrap {padding: 20px;}
+  .breadcrumbs_list {margin: 0 -12px;}
+  .breadcrumbs_item {padding: 0 12px;}
+  .breadcrumbs_item-home a {display: block; width: 20px;}
+  .breadcrumbs_menu {font-size: 16px;}
+  .breadcrumbs_menu-item a {padding: 7px 0; font-size: 14px;}
+  .breadcrumbs_menu-list {padding: 0 15px;}
+  .breadcrumbs_menu-list.active {padding: 8px 15px;}
+
+  .evaluation_body {padding: 20px;}
+  .evaluation_title {margin-bottom: 15px;}
+  .evaluation_info {padding: 15px 20px;}
+
+  .popup_wrap {padding: 30px; border-radius: 20px;}
+  .popup_close {width: 30px; height: 30px; top: -40px;}
+
+  .table thead th:first-child {border-radius: 10px 0 0 10px;}
+  .table thead th:last-child {border-radius: 0 10px 10px 0;}
+  .table thead th.m-left {border-radius: 10px 0 0 10px;}
+  .table thead th.m-right {border-radius: 0 10px 10px 0;}
+  .table tbody td {padding: 0 10px;}
+  .table tbody td.left {padding-left: 20px;}
+  .table .num, .table .cnt, .table .file {display: none !important;}
+  
+  /* > 개요 및 연혁 */
+  .gray_txt-1 {font-size: 20px;}
+
+  .step_title {font-size: 20px;}
+
+  /* > 개발방향 및 특성화계획 */
+  .gray_bg {position: relative; left: inherit; top: inherit; margin-bottom: 90px; transform: none; text-align: center;}
+  .gray_bg-img {margin-bottom: 10px;}
+  .gray_bg-text {font-size: 60px;}
+  .gray_bg-text::before {width: 200px; height: 195px;}
+  .gray_bg-text br {display: none;}
+  .gray_list-plan .gray_box {width: 100%; min-height: auto;}
+
+  .plan_slogan {font-size: 40px;}
+  .plan_list {padding-bottom: 25px;}
+  .plan_list::after {width: calc(100% + 30px);}
+  .plan_item {width: 50%; padding: 15px 0;}
+  .plan_inner {width: 90%;}
+  .plan_head {padding-top: 55px; padding-bottom: 15px;}
+  .plan_body {padding-top: 18px;}
+  .plan_num {font-size: 80px;}
+  .plan_tit {font-size: 20px;}
+  .plan_img {width: 100%; height: 0; padding-bottom: 60%; margin-top: 15px;}
+  .plan_img img {width: 100%;}
+  
+  /* > 토지이용계획도 */
+  .point_list {margin: -10px;}
+  .point_item {padding: 10px;}
+  .point_title {font-size: 20px;}
+
+  .glance_wrap {margin-top: 60px;}
+  .glance_title {font-size: 30px;}
+  
+  /* > 편의시설 소개 */
+  .amenities_sec_1.sub_sec {margin-bottom: 20px;}
+  .tab_item {font-size: 22px; margin-bottom: 17px;}
+  .amenities_map_box {width: calc(100% - 30px); padding: 30px 0 30px 30px; text-align: center;}
+  .amenities_txt_box {width: 100%; padding: 40px 30px 0;}
+
+  /* > 게시판 공통 */
+  .pagination {margin-top: 30px;}
+  .pagination_item-num {width: 30px;}
+  .pagination_item-arr {width: 30px;}
+  .pagination_item-arr_prev {margin-right: 10px;}
+  .pagination_item-arr_next {margin-left: 10px;}
+
+  .view_title {font-size: 20px;}
+
+  .list_btn {width: 110px; line-height: 40px; border-radius: 8px;}
+  .list_btn img {margin-right: 7px; margin-bottom: 4px;}
+  
+  /* > 영상자료 */
+  .video_list {margin: -15px -7px;}
+  .video_item {padding: 15px 7px;}
+  .video_title {margin-top: 10px; font-size: 18px;}
+  .video_date {margin-top: 0; font-size: 15px;}
+  
+  /* > 홍보책자 */
+  .ebook_list {margin: -20px;}
+  .ebook_item {padding: 20px;}
+  .ebook_title {margin-top: 13px; font-size: 18px;}
+  .ebook_btn {margin-top: 10px; font-size: 15px;}
+  
+  /* > 순환버스 개선 제안 */
+  .bus_box {width: 100%;}
+  .bus_box:not(:last-child)::after {width: calc(100% - 40px); height: 1px; top: 100%; right: 50%; transform: translateX(50%); border-right: none; border-bottom: 1px dashed #dddddd;}
+  .bus_img {width: 40px; margin-right: 10px;}
+  .bus_title {display: inline-block; vertical-align: middle; margin-right: 3px;}
+  .bus_text {display: inline-block; vertical-align: middle;}
+
+  .write_btn {width: 110px; line-height: 40px; border-radius: 8px;}
+  .write_btn img {margin-right: 7px; vertical-align: text-top;}
+
 } /*@media End*/
 
 @media screen and (max-width:767px){
   .container {padding-left: 20px; padding-right: 20px;}
+  .contentsWrap {padding-top: 90px;}
 
+  /* Header */
+  #header {position: fixed; width: 100%; height: 90px; padding-top: 35px; background: #fff; z-index: 15;}
+  #header .container {border-top: 1px solid #efefef;}
+  .chungnam_page-link {position: absolute; top: 5px; right: 20px; width: 85px; margin: 0;}
+  .mb_nav {position: absolute; top: 8px; right: 117px; text-align: right;}
+  .mb_nav_ul {gap: 0 15px;}
+  .mb_nav_ul > li:not(:first-child):after {left: -9px;}
+  .hd_search {width: auto;}
+  .hd_search form {display: none; position: absolute; left: 0; top: 90px; width: 100%; padding: 15px; box-shadow: 0 5px 5px rgba(0,0,0,0.1); border-top: 1px solid #efefef; background: #fff; z-index: 1;}
+  .hd_search-mobile {display: block;}
+
+  .allMenu {height: calc((var(--vh, 1vh) * 100) - 90px); position: fixed; top: 90px; padding: 15px 10px 30px; overflow: auto; border-top: 1px solid #efefef;}
+  .allMenu_ul-dp1 {display: block; gap: 0; font-size: 0;}
+  .allMenu_ul-dp1 > li {display: inline-block; vertical-align: top; width: 50%; padding: 10px;}
+  
   /* Footer */
   .ft_related-site {gap: 3px 20px;}
   .ft_related-tit {font-size: 12px;}
@@ -273,6 +494,7 @@
   .chungnam_finfo .txt2 {display: block; font-size: 14px;}
   .copyright {font-size: 12px;}
   .ft-logo {width: 150px;}
+  #go-top > a {width: 35px; height: 35px; background-size: 16px;}
 
   /* Main */
   .main-title {font-size: 20px;}
@@ -333,9 +555,254 @@
   .main_pr .prVideo_ct {flex-flow: column wrap; gap: 20px 10px;}
   .main_pr .prVideo-title {font-size: 18px;}
   .main_pr .prVideo-item {width: 100%;}
+
+  /* Common */
+  .radio_wrap input[type=radio] + label {padding-left: 23px; font-size: 14px; line-height: 1.3;}
+  .radio_wrap input[type=radio]+ label:before {width: 16px; height: 16px;}
+  .radio_wrap input[type=radio]:checked + label:after {width: 10px; height: 10px;}
+
+  /* Sub */
+  .sub_sec {margin-bottom: 40px;}
+  .sub_titleBox {margin-bottom: 30px; padding-bottom: 25px;}
+  .sub_titleBox.sub_titleBox-board {margin-bottom: 20px;}
+  .sub_titleBox.sub_titleBox-view {margin: 0;}
+  .sub_title {font-size: 30px;}
+  .sub_expl {padding-top: 3px; font-size: 18px;}
+  .sub_slogan {margin-bottom: 40px; font-size: 24px;}
+  .sub_slogan br {display: none;}
+
+  .sub_subject {font-size: 24px; line-height: 1.3;}
+  .sub_subject span {font-size: 18px; padding-left: 10px;}
+
+  .inner_division .sub_head {margin-bottom: 5px;}
+
+  #breadcrumbs {margin-top: 10px; margin-bottom: 40px;}
+  .breadcrumbs_wrap {padding: 15px; border-radius: 10px;}
+  .breadcrumbs_item {min-width: auto; width: 200px; max-width: 80%;}
+  .breadcrumbs_item-home {width: auto;}
+  .breadcrumbs_item-home a {width: 18px;}
+  .breadcrumbs_item-2dep {display: none;}
+
+  #evaluation {margin-bottom: 60px;}
+  .evaluation_title {margin-bottom: 10px; padding-left: 30px; font-size: 15px;}
+  .evaluation_title::before {width: 20px; height: 22px;}
+  .evaluation_list {padding-left: 5px; margin-bottom: 15px;}
+  .evaluation_item {margin-right: 20px;}
+  .evaluation_text {height: 40px; font-size: 14px;}
+  .evaluation_fin {height: 40px; font-size: 14px;}
+  .evaluation_info {display: block;}
+  .evaluation_info-txt {font-size: 14px;}
+  .evaluation_info-txt:not(:last-child) {padding: 0;}
+  .evaluation_info-txt:not(:last-child):after {display: none;}
+
+  .table thead th {height: 50px; padding: 5px; font-size: 15px;}
+  .table thead th:first-child {border-radius: 10px 0 0 10px;}
+  .table thead th:last-child {border-radius: 0 10px 10px 0;}
+  .table tbody td {height: 60px; padding: 5px; font-size: 14px;}
+  .table tbody td.bold {font-size: 14px;}
+  .table tbody td.left {padding-left: 5px;}
+
+  .table_btn {padding: 3px 7px 2px; font-size: 14px;}
+  .table_btn-link {border-radius: 5px;}
+  .table_btn-download {padding-right: 20px;}
+  .table_btn-download::after {width: 11px; right: 6px;}
+  
+  .popup_wrap {padding: 20px; margin: 0; border-radius: 15px;}
+  .popup_close {width: 22px; height: 22px; top: -30px;}
+
+  /* > 개요 및 연혁 */
+  .gray_list {margin: -7px;}
+  .gray_item {width: 50%; padding: 7px;}
+  .gray_box {min-height: 140px; padding: 15px 20px;}
+  .gray_txt-1 {margin-bottom: 5px; font-size: 18px;}
+  .gray_txt-2 {font-size: 16px;}
+  .gray_txt-3 span {font-size: 14px;}
+  .gray_txt-3 p {font-size: 14px;}
+
+  .his_wrap {height: 400px; padding: 20px 0 35px;}
+  .his_list {display: block;}
+  .his_list:not(:last-child) {padding-bottom: 20px;}
+  .his_list:before {left: 2px;}
+  .his_list:after {left: 0;}
+  .his-year {padding-left: 15px; font-size: 18px;}
+  .his_list-rt {padding-left: 15px; margin-top: 10px;}
+  .his_cont-list:not(:first-child) {margin-top: 5px;}
+  .his-date {width: 70px; text-align: left; font-size: 16px; line-height: 1.3;}
+  .his-txt {width: calc(100% - 70px); font-size: 16px; line-height: 1.3;}
+
+  .ovv_sec_4 {padding-top: 40px; padding-bottom: 50px;}
+  .step_item {width: 100%;}
+  .step_item ~ .step_item {margin-top: 20px;}
+  .step_title {margin-bottom: 2px; font-size: 18px;}
+  .step_year {margin-bottom: 10px; font-size: 16px;}
+  .step_obj {margin-bottom: 12px;}
+  .step_box ~ .step_box {margin-top: 6px;}
+  .step_box-title {margin-bottom: 2px; font-size: 16px;}
+  .step_box-title br {display: none;}
+  .step_box-text {font-size: 14px;}
+  .step_box-text ~ .step_box-text {margin-top: 1px;}
+  
+  /* > 개발방향 및 특성화계획 */
+  .gray_list-plan .gray_item {padding: 7px;}
+  .gray_txt_wrap .gray_txt-2 ~ .gray_txt-2 {margin-top: 4px;}
+
+  .plan_wrap ~ .plan_wrap {margin-top: 60px;}
+  .plan_slogan {padding-top: 0; font-size: 30px;}
+  .plan_item {width: 100%; padding: 7px 0;}
+  .plan_head {padding-top: 35px; padding-bottom: 10px;}
+  .plan_inner {max-width: 100%; width: 100%;}
+  .plan_num {font-size: 60px;}
+  .plan_tit {font-size: 18px;}
+  .plan_tit br {display: none;}
+  .plan_body {padding-top: 12px;}
+  .plan_txt {min-height: auto;}
+  .plan_txt p {font-size: 16px;}
+  .plan_txt p ~ p {margin-top: 2px;}
+  .plan_img {margin-top: 10px;}
+  
+  /* > 토지이용계획도 */
+  .point_list {margin: -7px;}
+  .point_item {min-height: 250px; padding: 7px;}
+  .point_item:nth-child(1) .point_box {border-radius: 15px 15px 0 15px;}
+  .point_item:nth-child(2) .point_box {border-radius: 15px 15px 15px 0;}
+  .point_item:nth-child(3) .point_box {border-radius: 15px 0 15px 15px;}
+  .point_item:nth-child(4) .point_box {border-radius: 0 15px 15px 15px;}
+  .point_box {padding: 20px 0;}
+  .point_title {padding: 0 25px; font-size: 18px;}
+  .point_title::before {top: 4px;}
+  .point_text {padding: 0 25px; font-size: 16px;}
+
+  .glance_wrap {margin-top: 40px; padding-top: 30px;}
+  .glance_title_box {width: 100%; margin-bottom: 15px; text-align: center;}
+  .glance_title {font-size: 26px;}
+  .glance_btn_box {width: 100%; text-align: center;}
+  .glance_btn {min-width: 150px;}
+  .glance_btn ~ .glance_btn {margin-left: 10px;}
+  .glance_btn p {font-size: 15px;}
+  
+  /* > 편의시설 소개 */
+  .tab_item {margin-bottom: 15px; font-size: 20px;}
+  .tab_item:not(:last-child) {margin-right: 23px;}
+  .amenities_map_box {width: calc(100% - 20px); padding: 20px 20px 20px 40px; text-align: center;}
+  .amenities_box:not(:first-child) {margin-top: 25px;}
+  .amenities_txt_box {padding: 30px 20px 0;}
+  .amenities_title {margin-bottom: 8px; padding-left: 22px; font-size: 20px;}
+  .amenities_title::before {width: 14px; height: 14px; border-radius: 3px; top: 8px;}
+
+  .amenities_table_wrap {padding: 1px; overflow: auto;}
+  .amenities_table th {height: 40px; padding: 5px; font-size: 15px;}
+  .amenities_table td {height: 33px; padding: 5px; font-size: 14px;}
+  .amenities_table_text {font-size: 14px; margin-top: 8px;}
+  .amenities_table_text ~ .amenities_table_text {margin-top: 1px;}
+  
+  .amenities_thumb_list {margin: 0 -10px;}
+  .amenities_thumb_item {padding: 0 10px;}
+  .amenities_thumb_txt {font-size: 16px;}
+
+  /* > 추진현황 */
+  .sub_head .main-more {justify-content: flex-end; margin-top: 0;}
+
+  .amenities_table td.left {padding: 10px;}
+
+  /* > 게시판 공통 */
+  .board_head {flex-direction: column; margin-bottom: 10px;}
+  .board_sch {margin-bottom: 10px;}
+  .board_sch .sch_word {width: calc(100% - 45px); height: 40px; padding: 0 15px; font-size: 14px;}
+  .board_sch .sch_word::placeholder {font-size: 14px;}
+  .board_sch .sch_btn {width: 45px; height: 40px;}
+  .board_cnt {margin: 0 -10px;}
+  .board_cnt-text {padding: 0 10px; font-size: 14px;}
+
+  .pagination {margin-top: 20px;}
+  .pagination_item-num {width: 25px;}
+  .pagination_item-arr {width: 25px;}
+  .pagination_link {font-size: 17px;}
+  .pagination_link img {height: 15px;}
+  .pagination_item-arr_prev {margin-right: 5px;}
+  .pagination_item-arr_next {margin-left: 5px;}
+
+  .secret_icon {width: 10px; margin-left: 5px;}
+
+  .view_head {padding: 15px 5px;}
+  .view_title {font-size: 18px;}
+  .view_title_box img {width: 13px;}
+  .view_info_box {flex-wrap: wrap;}
+  .view_info_list {margin: 0 -10px;}
+  .view_info_item {padding: 0 10px;}
+  .view_info_txt-1, .view_info_txt-2 {font-size: 14px;}
+  .view_info_date {font-size: 14px;}
+  .view_content {min-height: 200px; padding: 15px 5px; font-size: 14px;}
+
+  .view_file_wrap {padding: 10px 5px;}
+  .view_file_head, .view_file_body {display: block; width: 100%;}
+  .view_title_box {margin-bottom: 5px;}
+  .view_file_title {font-size: 14px;}
+  .view_file_download {margin-right: 7px; font-size: 14px;}
+  .view_file_item ~ .view_file_item {margin-top: 3px;}
+  .view_file_link {padding: 2px 7px; font-size: 13px;}
+  .view_file_link img {width: 11px; margin-right: 2px; margin-bottom: 1px;}
+
+  .view_wrap-reply {margin-top: 30px;}
+  .view_wrap-reply .view_head {padding: 15px 15px 13px;}
+  .view_wrap-reply .view_content {padding-left: 15px; padding-right: 15px;}
+  .view_wrap-reply .view_file_wrap {padding-left: 15px; padding-right: 15px;}
+
+  .list_wrap {margin-top: 10px;}
+  .list_btn {width: 100px; line-height: 35px; font-size: 14px;}
+  .list_btn img {margin-bottom: 0;}
+  
+  /* > 영상자료 */
+  .video_list {margin: -8px -5px;}
+  .video_item {width: 50%; padding: 8px 5px;}
+  .video_head {border-radius: 15px;}
+  .video_title {margin-top: 8px; font-size: 16px;}
+  .video_date {margin-top: 0; font-size: 14px;}
+  
+  /* > 홍보책자 */
+  .ebook_list {margin: -10px -5px;}
+  .ebook_item {width: 50%; padding: 10px 5px;}
+  .ebook_head {width: 70%; padding-bottom: 95%;}
+  .ebook_title {margin-top: 10px; font-size: 16px;}
+  .ebook_btn {width: 100px; height: 35px; line-height: 33px; margin-top: 5px; font-size: 14px;}
+  .ebook_btn img {width: 12px; margin-right: 2px; margin-bottom: 1px;}
+  
+  /* > 순환버스 개선 제안 */
+  .bus_box {padding: 15px;}
+  .bus_img {width: 30px;}
+  .bus_title {font-size: 20px;}
+  .bus_text {font-size: 16px;}
+  .bus_table th {height: 35px; font-size: 16px;}
+  .bus_table td {height: 25px; padding: 2px 5px; font-size: 14px;}
+
+  .table_wrap-text .table thead {display: none;}
+  .table_wrap-text .table,
+  .table_wrap-text .table tbody,
+  .table_wrap-text .table tbody tr,
+  .table_wrap-text .table tbody td {display: block; width: 100%; height: auto; text-align: left;}
+  .table_wrap-text .table tbody {border-top: 1px solid #888;}
+  .table_wrap-text .table tbody tr {padding: 7px 0;}
+  .table_wrap-text .table tbody td {padding: 1px 0;}
+  .table_wrap-text .table tbody td.title {display: flex;}
+  
+  .write_wrap {margin-top: 10px;}
+  .write_btn {width: 100px; line-height: 35px; font-size: 14px;}
+
 } /*@media End*/
 
 @media screen and (max-width:480px){
+  .container {padding-left: 15px; padding-right: 15px;}
+  /* Header */
+  .allMenu {padding: 10px 0 20px;}
+  .allMenu_ul-dp1 > li {width: 100%; padding: 7px 0;}
+  .allMenu_ul-dp1 > li > a {height: 50px; font-size: 16px;}
+  .allMenu_ul-dp2 {margin-top: 5px;}
+  .allMenu_ul-dp2 > li:not(:first-child) {margin-top: 4px;}
+  .allMenu_ul-dp2 > li > a {height: 45px; font-size: 15px;}
+
+  .mb_nav {right: 113px;}
+  .chungnam_page-link {right: 15px;}
+  .hd_search-mobile {right: 45px;}
+
   /* Footer */
   .ft_related-site img {height: 30px;}
 
@@ -346,4 +813,105 @@
   .chungnam_finfo .txt1 {font-size: 12px;}
   .chungnam_finfo .txt2 {font-size: 12px;}
   .copyright {font-size: 11px;}
+
+  /* Sub */
+  .sub_sec {margin-bottom: 30px;}
+  .sub_titleBox {margin-bottom: 20px; padding-bottom: 15px;}
+  .sub_titleBox.sub_titleBox-view {margin: 0;}
+  .sub_title {font-size: 26px;}
+  .sub_expl {font-size: 16px;}
+  .sub_slogan {margin-bottom: 30px; font-size: 20px;}
+
+  .sub_subject {font-size: 20px;}
+  
+  .breadcrumbs_wrap {padding: 10px 15px;}
+  .breadcrumbs_item-home a {width: 16px;}
+  .breadcrumbs_menu {font-size: 15px;}
+  .breadcrumbs_menu-list {top: 115%;}
+
+  #evaluation {margin-bottom: 45px;}
+  .evaluation_body {padding: 15px;}
+  .evaluation_item {width: calc(50% - 20px);}
+  .evaluation_text {max-width: calc(100% - 75px); margin-right: 5px;}
+  .evaluation_fin {width: 70px;}
+  .evaluation_info {padding: 12px 15px;}
+
+  .table_wrap-480 {overflow: auto; padding-top: 20px;}
+  .table_wrap-480 .table {min-width: 500px; table-layout: auto;}
+  .table_wrap-480::before {display: block;}
+  
+  .table thead th {font-size: 14px;}
+  .table_btn {font-size: 12px;}
+
+  /* > 개요 및 연혁 */
+  .gray_list {margin: -5px;}
+  .gray_item {width: 100%; padding: 5px;}
+  .gray_box {min-height: 110px;}
+
+  .ovv_sec_4 {padding: 30px 0;}
+  
+  /* > 개발방향 및 특성화계획 */
+  .gray_bg-text {font-size: 46px;}
+  .gray_list-plan .gray_item {padding: 5px;}
+
+  .plan_wrap ~ .plan_wrap {margin-top: 40px;}
+  .plan_slogan {font-size: 24px;}
+  .plan_list {padding-bottom: 15px;}
+  .plan_list::after {width: calc(100% + 15px);}
+  .plan_txt p {line-height: 1.4;}
+  
+  /* > 토지이용계획도 */
+  .point_list {margin: -5px;}
+  .point_item {width: 100%; min-height: auto; padding: 5px;}
+  .point_item .point_box {border-radius: 10px !important;}
+
+  .glance_wrap {margin-top: 30px; padding-top: 25px;}
+  .glance_title_box {margin-bottom: 12px;}
+  .glance_title {font-size: 22px;}
+  .glance_btn {min-width: auto; width: 130px; max-width: 45%;}
+  .glance_btn ~ .glance_btn {margin-left: 7px;}
+  .glance_btn p {margin-left: 7px; font-size: 14px;}
+  
+  /* > 편의시설 소개 */
+  .tab_item {font-size: 18px;}
+  .tab_item:not(:last-child) {margin-right: 20px;}
+  .amenities_map_box {width: calc(100% - 15px); padding: 15px 15px 15px 30px; text-align: center;}
+  .amenities_txt_box {padding: 25px 15px 0;}
+  .amenities_title {font-size: 18px;}
+  .amenities_title::before {top: 7px;}
+
+  .amenities_thumb_wrap {margin-top: 20px;}
+  .amenities_thumb_list {margin: 0 -7px;}
+  .amenities_thumb_item {padding: 0 7px;}
+
+  .amenities_table th {font-size: 14px;}
+  
+  /* > 게시판 공통 */
+  .view_title {font-size: 16px;}
+  .view_info_box {display: block;}
+  .view_info_list {margin: 0;}
+  .view_info_item {display: block; padding: 0;}
+  .view_info_item:not(:last-child)::after {display: none;}
+
+  /* > 영상자료 */
+  .video_list {margin: -8px 0;}
+  .video_item {width: 100%; padding: 8px 0;}
+  
+  /* > 홍보책자 */
+  .ebook_head {width: 80%; padding-bottom: 108%;}
+  
+  /* > 순환버스 개선 제안 */
+  .bus_box {padding: 15px 10px;}
+  .bus_box:not(:last-child)::after {width: calc(100% - 20px);}
+  .bus_inner {padding-bottom: 20px;}
+  .bus_head {margin-bottom: 5px;}
+  .bus_title {font-size: 18px;}
+  .bus_text {font-size: 15px;}
+  .bus_body {overflow: auto;}
+  .bus_body::before {position: absolute; bottom: 10px; left: 0; width: 100%; content:"← 좌우로 스크롤하여 확인해주세요 →"; font-size: 14px; font-weight: 400; color: #394d66; text-align: center;}
+  .bus_table {min-width: 450px;}
+  .bus_table th {padding: 0 2px; font-size: 14px;}
+  .bus_table td {padding: 2px 0;}
+  
+
 } /*@media End*/

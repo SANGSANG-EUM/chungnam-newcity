@@ -94,7 +94,8 @@
           </nav>
           <div class="hd_rnb">
             <div class="hd_search">
-              <form action="">
+              <button class="hd_search-mobile"></button>
+              <form action="" class="hd_search-form">
                 <fieldset>
                   <legend class="sound_only">전체검색메뉴</legend>
                   <input type="text" class="hd_search-keyword" placeholder="검색어를 입력하세요.">
@@ -105,15 +106,15 @@
             <div class="mb_nav">
               <ul class="mb_nav_ul">
                 <li>
-                  <a href="">로그인</a>
+                  <a href="https://www.chungnam.go.kr/cnnet/userGuide.do?mnu_cd=CNNMENU01012" target="_blank" title="충남도청 로그인 페이지 새창으로 열림">로그인</a>
                 </li>
                 <li>
-                  <a href="">회원가입</a>
+                  <a href="https://naepo.chungnam.go.kr/cnnet/userGuide.do?mnu_cd=CNNMENU01014&htUrl=/main.do?site_div_cd=0001amp;prnt_mnu_cd=CNNMENU00000amp;gnb_prnt_mnu_cd=CNNMENU00051" target="_blank" title="충남도청 회원가입 페이지 새창으로 열림">회원가입</a>
                 </li>
               </ul>
             </div>
-            <a href="" class="chungnam_page-link">
-              <img src="../sources/images/chungnam-logo.png" alt="새창열림, 충청남도 홈페이지로 이동">
+            <a href="http://www.chungnam.go.kr" class="chungnam_page-link" target="_blank">
+              <img src="../sources/images/chungnam-logo.png" alt="충청남도 홈페이지 새창으로 열림">
             </a>
             <button type="button" class="all_menu-btn">
               <span></span>
@@ -198,7 +199,7 @@
             <div class="inner">
               <div class="main_vs_lt">
                 <div class="build-map-viewer main_vs-map">
-                  <img src="../sources/images/main_vs-map.png" alt="조성현황 지도">
+                  <img src="../sources/images/main_vs-map1.png" alt="조성현황 지도">
                 </div>
                 <div class="main_vs-info">
                   <span class="icon">
@@ -231,7 +232,7 @@
                   <div class="build_category">
                     <ul class="build_category_ul">
                       <li class="active">
-                        <button type="button" class="build-btn active" data-map-image="../sources/images/main_vs-map.png">
+                        <button type="button" class="build-btn active" data-map-image="../sources/images/main_vs-map1.png">
                           <span class="icon">
                             <img src="../sources/images/build-icon1.png" alt="">
                           </span>
@@ -239,7 +240,7 @@
                         </button>
                       </li>
                       <li>
-                        <button type="button" class="build-btn" data-map-image="../sources/images/main_vs-map.png">
+                        <button type="button" class="build-btn" data-map-image="../sources/images/main_vs-map2.png">
                           <span class="icon">
                             <img src="../sources/images/build-icon2.png" alt="">
                           </span>
@@ -247,7 +248,7 @@
                         </button>
                       </li>
                       <li>
-                        <button type="button" class="build-btn" data-map-image="../sources/images/main_vs-map.png">
+                        <button type="button" class="build-btn" data-map-image="../sources/images/main_vs-map3.png">
                           <span class="icon">
                             <img src="../sources/images/build-icon3.png" alt="">
                           </span>
@@ -255,7 +256,7 @@
                         </button>
                       </li>
                       <li>
-                        <button type="button" class="build-btn" data-map-image="../sources/images/main_vs-map.png">
+                        <button type="button" class="build-btn" data-map-image="../sources/images/main_vs-map4.png">
                           <span class="icon">
                             <img src="../sources/images/build-icon4.png" alt="">
                           </span>
@@ -263,7 +264,7 @@
                         </button>
                       </li>
                       <li>
-                        <button type="button" class="build-btn" data-map-image="../sources/images/main_vs-map.png">
+                        <button type="button" class="build-btn" data-map-image="../sources/images/main_vs-map5.png">
                           <span class="icon">
                             <img src="../sources/images/build-icon5.png" alt="">
                           </span>
@@ -271,7 +272,7 @@
                         </button>
                       </li>
                       <li>
-                        <button type="button" class="build-btn" data-map-image="../sources/images/main_vs-map.png">
+                        <button type="button" class="build-btn" data-map-image="../sources/images/main_vs-map6.png">
                           <span class="icon">
                             <img src="../sources/images/build-icon6.png" alt="">
                           </span>
@@ -611,24 +612,5 @@
       </div>
     </div>
     <!-- } (모바일)조성현황 지도 popup -->
-
-    <script>
-    $(document).ready(function(){
-      $(".gnb_ul-dp1 > li").on('mouseover', function(){
-        $('.gnb_ul-dp2').hide();
-        $(this).find('.gnb_ul-dp2').show();
-      })
-
-      $("#header").on('mouseleave', function(){
-        $('.gnb_ul-dp2').hide();
-      })
-
-      $(".all_menu-btn").on('click', function(){
-        $(this).toggleClass('act');
-        $(".allMenu").toggle();
-      })
-    })
-    </script>
-
   </body>
 </html>
