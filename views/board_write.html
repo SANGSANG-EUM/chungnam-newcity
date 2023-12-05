@@ -80,8 +80,8 @@
     </div>
     <!-- } Header -->
 
-    <!-- Contents (boardEbook) { -->
-    <div class="contentsWrap sub boardEbook">
+    <!-- Contents (boardWrite) { -->
+    <div class="contentsWrap sub boardWrite">
       
       <div id="breadcrumbs">
         <div class="container">
@@ -95,7 +95,7 @@
                     </a>
                   </li>
                   <li class="breadcrumbs_item breadcrumbs_item-1dep">
-                    <button class="breadcrumbs_menu">소식알림</button>
+                    <button class="breadcrumbs_menu">소통/참여</button>
                     <ul class="breadcrumbs_menu-list">
                       <li class="breadcrumbs_menu-item">
                         <a href="">충남혁신도시 소개</a>
@@ -104,18 +104,15 @@
                         <a href="">정보공개</a>
                       </li>
                       <li class="breadcrumbs_menu-item">
-                        <a href="">소통/참여</a>
+                        <a href="">소식알림</a>
                       </li>
                     </ul>
                   </li>
                   <li class="breadcrumbs_item breadcrumbs_item-2dep">
-                    <button class="breadcrumbs_menu">홍보책자</button>
+                    <button class="breadcrumbs_menu">순환버스 개선제안</button>
                     <ul class="breadcrumbs_menu-list">
                       <li class="breadcrumbs_menu-item">
-                        <a href="">공지사항</a>
-                      </li>
-                      <li class="breadcrumbs_menu-item">
-                        <a href="">영상자료</a>
+                        <a href="">관련 부서 안내</a>
                       </li>
                     </ul>
                   </li>
@@ -126,194 +123,161 @@
         </div>
       </div>
 
-      <div class="sub_sec sub_sec-title"> 
+      <div class="sub_sec sub_sec-title">
         <div class="container">
           <div class="wrapper"> 
             <div class="inner">
-              <div class="sub_titleBox sub_titleBox-board">
-                <p class="f_gmarket sub_title">홍보책자</p>
-                <p class="sub_expl">충남혁신도시의 홍보책자입니다.</p>
+              <div class="sub_titleBox sub_titleBox-view">
+                <p class="f_gmarket sub_title">순환버스 개선 제안</p>
+                <p class="sub_expl">충남혁신도시의 순환버스를 안내드립니다.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="sub_sec ebook_sec_1">
+      <div class="sub_sec write_sec_1">
         <div class="container">
           <div class="wrapper">
             <div class="inner">
               <div class="sub_body">
-                <div class="board_head">
-                  <div class="board_sch">
-                    <form action="">
-                      <input type="text" name="sch_word" id="sch_word" class="sch_word" placeholder="검색어를 입력해주세요.">
-                      <label for="sch_word">검색어</label>
-                      <button type="submit" class="sch_btn">검색</button>
-                    </form>
+                <form action="" onsubmit="return register_submit(this);">
+                  <div class="agree_wrap">
+                    <div class="agree_box">
+                      <h5 class="agree_title">※ 개인정보 수집 및 이용에 관한 동의</h5>
+                      <p class="agree_text1 bottom">개인정보 보호법에 의거하여 다음과같이 개인정보 수집 및 이용 목적을 알려드립니다. </p>
+                      <p class="agree_text2"><span>1. 수집항목 </span>성명, 휴대폰 번호, 이메일</p>
+                      <p class="agree_text2"><span>2. 이용목적 </span>게시자 의견 확인, 답변 등록여부 문자및 이메일 발송</p>
+                      <p class="agree_text2"><span>3. 개인정보 보유 및 이용기간 </span>게시판 서비스 종료 시까지</p>
+                      <p class="agree_text1 top">위 개인정보 수집·이용 및 취급 위탁에 동의를 거부하실수 있으며, 다만 동의하지 않으실 경우 게시판 글쓰기가 제한됩니다.</p>
+                    </div>
+                    <div class="agree_chk check_wrap">
+                      <input type="checkbox" name="agreeChk" id="agreeChk">
+                      <label for="agreeChk">개인정보 수집·이용 및 취급 위탁에 동의합니다.</label>
+                    </div>
                   </div>
-                  <div class="board_cnt">
-                    <p class="board_cnt-text">전체 <span>46개</span></p>
-                    <p class="board_cnt-text">현재 페이지 <span>1/5</span></p>
+                  <div class="write_body">
+                    <div class="write_box">
+                      <div class="write_row">
+                        <div class="write_item write_item-head">
+                          <p class="write_title">제목</p>
+                        </div>
+                        <div class="write_item write_item-body">
+                          <input type="text" class="write_input" placeholder="글 제목을 입력해 주세요.">
+                        </div>
+                      </div>
+                      <div class="write_row">
+                        <div class="write_item write_item-head">
+                          <p class="write_title">작성자</p>
+                        </div>
+                        <div class="write_item write_item-body">
+                          <input type="text" class="write_input" placeholder="작성자 성함을 입력해 주세요.">
+                        </div>
+                      </div>
+                      <div class="write_row">
+                        <div class="write_item write_item-head">
+                          <p class="write_title">공개여부</p>
+                        </div>
+                        <div class="write_item write_item-body">
+                          <div class="write_radio_wrap write_radio_wrap-padding">
+                            <div class="write_radio radio_wrap">
+                              <input type="radio" name="disclosure" id="disclosure-y">
+                              <label for="disclosure-y">공개</label>
+                            </div>
+                            <div class="write_radio radio_wrap">
+                              <input type="radio" name="disclosure" id="disclosure-n">
+                              <label for="disclosure-n">비공개</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="write_row">
+                        <div class="write_item write_item-head">
+                          <p class="write_title">SMS 수신</p>
+                        </div>
+                        <div class="write_item write_item-body">
+                          <input type="number" class="write_input write_input-phone" placeholder="휴대폰 번호">
+                          <p class="write_text-hypen">-</p>
+                          <input type="number" class="write_input write_input-phone">
+                          <p class="write_text-hypen">-</p>
+                          <input type="number" class="write_input write_input-phone">
+                          <div class="write_add_box write_add_box-1">
+                            <p class="write_text write_text-1">답변등록 여부를 문자로 받으시겠습니까?</p>
+                            <div class="write_radio_wrap">
+                              <div class="write_radio radio_wrap">
+                                <input type="radio" name="sms" id="sms-y">
+                                <label for="sms-y">예</label>
+                              </div>
+                              <div class="write_radio radio_wrap">
+                                <input type="radio" name="sms" id="sms-n">
+                                <label for="sms-n">아니요</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="write_add_box write_add_box-2">
+                            <p class="write_text write_text-2">(하단의 이메일 주소를 입력해 주시면 답변내용이 메일로 발송됩니다.)</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="write_row">
+                        <div class="write_item write_item-head">
+                          <p class="write_title">이메일</p>
+                        </div>
+                        <div class="write_item write_item-body">
+                          <input type="text" class="write_input" placeholder="이메일을 입력해 주세요.">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="write_box">
+                      <div class="write_row">
+                        <div class="write_item write_item-head">
+                          <p class="write_title">첨부파일</p>
+                        </div>
+                        <div class="write_item write_item-body">
+                          <div class="write_file_wrap">
+                            <div class="write_file">
+                              <input type="file" name="w-file" id="w-file1" class="file_origin" onchange="fileChk(this, 30)">
+                              <label for="w-file1" class="file_btn">파일첨부</label>
+                              <input type="text" class="file_text" readonly="" placeholder="선택된 파일이 없습니다.">
+                            </div>
+                            <div class="write_file">
+                              <input type="file" name="w-file" id="w-file2" class="file_origin" onchange="fileChk(this, 30)">
+                              <label for="w-file2" class="file_btn">파일첨부</label>
+                              <input type="text" class="file_text" readonly="" placeholder="선택된 파일이 없습니다.">
+                            </div>
+                            <div class="write_file">
+                              <input type="file" name="w-file" id="w-file3" class="file_origin" onchange="fileChk(this, 30)">
+                              <label for="w-file3" class="file_btn">파일첨부</label>
+                              <input type="text" class="file_text" readonly="" placeholder="선택된 파일이 없습니다.">
+                            </div>
+                            <div class="write_file">
+                              <input type="file" name="w-file" id="w-file4" class="file_origin" onchange="fileChk(this, 30)">
+                              <label for="w-file4" class="file_btn">파일첨부</label>
+                              <input type="text" class="file_text" readonly="" placeholder="선택된 파일이 없습니다.">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="write_box">
+                      <div class="write_row">
+                        <div class="write_item write_item-head">
+                          <p class="write_title">내용작성</p>
+                        </div>
+                        <div class="write_item write_item-body">
+                          <textarea name="" id="" class="write_textarea" cols="30" rows="10" placeholder="문의내용을 입력해 주세요."></textarea>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="ebook_wrap">
-                  <ul class="ebook_list i-col-4">
-                    <li class="ebook_item">
-                      <div class="ebook_inner">
-                        <div class="ebook_head">
-                          <img src="../sources/images/ebook-img1.jpg" alt="홍보책자 썸네일" class="ebook_img">
-                        </div>
-                        <div class="ebook_body">
-                          <p class="ebook_title text_row1">충남혁신도시 홍보 카달로그</p>
-                          <a href="" class="ebook_btn">
-                            <img src="../sources/images/link-icon.png" alt="PDF아이콘">
-                            PDF보기
-                          </a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="ebook_item">
-                      <div class="ebook_inner">
-                        <div class="ebook_head">
-                          <img src="../sources/images/ebook-img2.jpg" alt="홍보책자 썸네일" class="ebook_img">
-                        </div>
-                        <div class="ebook_body">
-                          <p class="ebook_title text_row1">충남혁신도시 홍보 리플렛</p>
-                          <a href="" class="ebook_btn">
-                            <img src="../sources/images/link-icon.png" alt="PDF아이콘">
-                            PDF보기
-                          </a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="ebook_item">
-                      <div class="ebook_inner">
-                        <div class="ebook_head">
-                          <img src="../sources/images/ebook-img.jpg" alt="홍보책자 썸네일" class="ebook_img">
-                        </div>
-                        <div class="ebook_body">
-                          <p class="ebook_title text_row1">충남혁신도시 홍보 카달로그</p>
-                          <a href="" class="ebook_btn">
-                            <img src="../sources/images/link-icon.png" alt="PDF아이콘">
-                            PDF보기
-                          </a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="ebook_item">
-                      <div class="ebook_inner">
-                        <div class="ebook_head">
-                          <img src="../sources/images/ebook-img.jpg" alt="홍보책자 썸네일" class="ebook_img">
-                        </div>
-                        <div class="ebook_body">
-                          <p class="ebook_title text_row1">충남혁신도시 홍보 카달로그</p>
-                          <a href="" class="ebook_btn">
-                            <img src="../sources/images/link-icon.png" alt="PDF아이콘">
-                            PDF보기
-                          </a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="ebook_item">
-                      <div class="ebook_inner">
-                        <div class="ebook_head">
-                          <img src="../sources/images/ebook-img.jpg" alt="홍보책자 썸네일" class="ebook_img">
-                        </div>
-                        <div class="ebook_body">
-                          <p class="ebook_title text_row1">충남혁신도시 홍보 카달로그</p>
-                          <a href="" class="ebook_btn">
-                            <img src="../sources/images/link-icon.png" alt="PDF아이콘">
-                            PDF보기
-                          </a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="ebook_item">
-                      <div class="ebook_inner">
-                        <div class="ebook_head">
-                          <img src="../sources/images/ebook-img.jpg" alt="홍보책자 썸네일" class="ebook_img">
-                        </div>
-                        <div class="ebook_body">
-                          <p class="ebook_title text_row1">충남혁신도시 홍보 카달로그</p>
-                          <a href="" class="ebook_btn">
-                            <img src="../sources/images/link-icon.png" alt="PDF아이콘">
-                            PDF보기
-                          </a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="ebook_item">
-                      <div class="ebook_inner">
-                        <div class="ebook_head">
-                          <img src="../sources/images/ebook-img.jpg" alt="홍보책자 썸네일" class="ebook_img">
-                        </div>
-                        <div class="ebook_body">
-                          <p class="ebook_title text_row1">충남혁신도시 홍보 카달로그</p>
-                          <a href="" class="ebook_btn">
-                            <img src="../sources/images/link-icon.png" alt="PDF아이콘">
-                            PDF보기
-                          </a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="ebook_item">
-                      <div class="ebook_inner">
-                        <div class="ebook_head">
-                          <img src="../sources/images/ebook-img.jpg" alt="홍보책자 썸네일" class="ebook_img">
-                        </div>
-                        <div class="ebook_body">
-                          <p class="ebook_title text_row1">충남혁신도시 홍보 카달로그</p>
-                          <a href="" class="ebook_btn">
-                            <img src="../sources/images/link-icon.png" alt="PDF아이콘">
-                            PDF보기
-                          </a>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="board_foot">
-                  <div class="pagination">
-                    <ul class="pagination_list">
-                      <li class="pagination_item pagination_item-arr pagination_item-arr_first">
-                        <a href="" class="pagination_link">
-                          <img src="../sources/images/arrow-first.png" alt="처음">
-                        </a>
-                      </li>
-                      <li class="pagination_item pagination_item-arr pagination_item-arr_prev">
-                        <a href="" class="pagination_link">
-                          <img src="../sources/images/arrow-prev.png" alt="이전">
-                        </a>
-                      </li>
-                      <li class="pagination_item pagination_item-num">
-                        <a href="" class="pagination_link active">1</a>
-                      </li>
-                      <li class="pagination_item pagination_item-num">
-                        <a href="" class="pagination_link">2</a>
-                      </li>
-                      <li class="pagination_item pagination_item-num">
-                        <a href="" class="pagination_link">3</a>
-                      </li>
-                      <li class="pagination_item pagination_item-num">
-                        <a href="" class="pagination_link">4</a>
-                      </li>
-                      <li class="pagination_item pagination_item-num">
-                        <a href="" class="pagination_link">5</a>
-                      </li>
-                      <li class="pagination_item pagination_item-arr pagination_item-arr_next">
-                        <a href="" class="pagination_link">
-                          <img src="../sources/images/arrow-next.png" alt="다음">
-                        </a>
-                      </li>
-                      <li class="pagination_item pagination_item-arr pagination_item-arr_last">
-                        <a href="" class="pagination_link">
-                          <img src="../sources/images/arrow-last.png" alt="마지막">
-                        </a>
-                      </li>
-                    </ul>
+                  <div class="write_foot">
+                    <div class="write_wrap">
+                      <button type="submit" class="write_btn">
+                        <img src="../sources/images/write-icon.png" alt="작성 아이콘">등록하기
+                      </button>
+                    </div>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
@@ -366,9 +330,45 @@
           </div>
         </div>
       </div>
-
     </div>
-    <!-- } Contents (boardEbook) -->
+    <!-- } Contents (boardWrite) -->
+
+    <script>
+    function register_submit(f) {
+      //개인정보 수집 동의
+      if ($("input[name='agreeChk']").is(":checked")==false) {
+        alert("개인정보 수집 및 이용에 관한 확인 후 동의바랍니다.");
+        return false;
+      }
+    }
+
+    //파일첨부 > 확장자, 용량 체크
+    const fileChk = (fileObj, maxSize) => {
+      let filePath    = fileObj.value;
+      let filePathArr = filePath.split("\\");
+      let fileName    = filePathArr[filePathArr.length - 1];
+      let $thisText   = fileObj.closest(".write_file").querySelector(".file_text");
+
+      if (filePath) {
+        $thisText.value = fileName;
+      } else {
+        fileObj.value = "";
+        $thisText.value = "";
+      }
+
+      // 용량 체크
+      if (fileObj.files && fileObj.files[0]) {
+        let fileMaxSize = maxSize * 1024 * 1024; //MB
+        let fileSize    = fileObj.files[0].size;
+        if(fileMaxSize < fileSize) {
+          alert(`파일 용량은 ${maxSize}MB 이하로 등록 가능합니다.`);
+          fileObj.value = "";
+          $thisText.value = "";
+          return false;
+        }
+      }
+    }
+    </script>
 
     <!-- Footer { -->
     <div id="footer">

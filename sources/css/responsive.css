@@ -265,6 +265,8 @@
   .video_item {padding: 20px 15px;}
   .video_title {margin-top: 12px;}
   .video_date {margin-top: 3px;}
+
+  .view_video_wrap {margin-top: 20px;}
   
   /* > 홍보책자 */
   .ebook_list {margin: -30px;}
@@ -561,6 +563,10 @@
   .radio_wrap input[type=radio]+ label:before {width: 16px; height: 16px;}
   .radio_wrap input[type=radio]:checked + label:after {width: 10px; height: 10px;}
 
+  .check_wrap input[type=checkbox] + label {padding-left: 20px; font-size: 14px;}
+  .check_wrap input[type=checkbox]+ label:before {width: 14px; height: 14px; bottom: inherit; top: 3px;}
+  .check_wrap input[type=checkbox]:checked + label:after {width: 14px; height: 14px; bottom: inherit; top: 3px;}
+
   /* Sub */
   .sub_sec {margin-bottom: 40px;}
   .sub_titleBox {margin-bottom: 30px; padding-bottom: 25px;}
@@ -757,6 +763,8 @@
   .video_head {border-radius: 15px;}
   .video_title {margin-top: 8px; font-size: 16px;}
   .video_date {margin-top: 0; font-size: 14px;}
+
+  .view_video_wrap {width: calc(100% - 10px); margin: 15px 5px 0;}
   
   /* > 홍보책자 */
   .ebook_list {margin: -10px -5px;}
@@ -786,6 +794,36 @@
   
   .write_wrap {margin-top: 10px;}
   .write_btn {width: 100px; line-height: 35px; font-size: 14px;}
+
+  .agree_box {padding: 15px 20px;}
+  .agree_title {margin-bottom: 5px; font-size: 16px;}
+  .agree_text1 {font-size: 14px;}
+  .agree_text1.bottom {margin-bottom: 5px;}
+  .agree_text1.top {margin-top: 5px;}
+  .agree_text2, .agree_text2 span {font-size: 14px;}
+  .agree_text2 ~ .agree_text2 {margin: 0;}
+  .agree_chk {margin-left: 0; margin-top: 5px;}
+
+  .write_body {margin-top: 35px;}
+  .write_box, .write_box:not(:first-child) {padding: 0; border-top: none;}
+  .write_row, .write_row:not(:first-child) {padding: 15px 0; margin: 0; border-top: 1px dashed #e0e0e0;}
+  .write_box:first-child .write_row:first-child {border-top: none;}
+  .write_item {display: block;}
+  .write_item.write_item-head {width: 100%; padding: 0 0 5px;}
+  .write_item.write_item-body {width: 100%;}
+  .write_title {font-size: 14px;}
+  .write_input {height: 40px; padding: 0 10px; font-size: 14px;}
+  .write_textarea {height: 200px; padding: 10px; font-size: 14px;}
+  .write_input::placeholder,
+  .write_textarea::placeholder {font-size: 14px;}
+  .write_radio_wrap.write_radio_wrap-padding {padding: 3px 0 0;}
+  .write_radio:not(:last-child) {margin-right: 10px;}
+  .write_text {font-size: 14px;}
+  .write_add_box-1 {margin-top: 8px;}
+  .write_add_box-2 {margin-top: 3px;}
+  .file_btn {width: 65px; margin-right: 10px; font-size: 13px;}
+  .write_file:not(:first-child) {margin-top: 4px;}
+  .file_text {width: calc(100% - 75px); font-size: 14px;}
 
 } /*@media End*/
 
@@ -912,6 +950,9 @@
   .bus_table {min-width: 450px;}
   .bus_table th {padding: 0 2px; font-size: 14px;}
   .bus_table td {padding: 2px 0;}
+
+  .write_input-phone {max-width: calc((100% - 36px) / 3);}
+  .write_text-hypen {width: 18px;}
   
 
 } /*@media End*/
