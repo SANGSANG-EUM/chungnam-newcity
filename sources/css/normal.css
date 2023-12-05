@@ -188,6 +188,9 @@
 .main_board_top {display: flex; flex-flow: row wrap; justify-content: space-between; margin-top: 50px;}
 .main_board_tabs {}
 .main_board_tab_ul {display: flex; flex-flow: row wrap; gap: 0 40px;}
+.main_board_tab_ul .tab_item {margin: 0 !important;}
+.main_board_tab_ul .tab_item:not(:last-child) {margin: 0;}
+.main_board_tab_ul .tab_item.active::after {display: none;}
 .main_board_tab_ul > li .tab-btn {border: none; background: none; font-size: 24px; font-weight: 700; color: #999;}
 .main_board_tab_ul > li.active .tab-btn {color: var(--main-color);}
 
