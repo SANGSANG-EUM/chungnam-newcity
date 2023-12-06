@@ -553,8 +553,8 @@
 .video_list {margin: -30px -20px; font-size: 0;}
 .video_item {vertical-align: top; padding: 30px 20px;}
 .video_inner {}
-.video_head {border-radius: 20px; overflow: hidden;}
-.video_head img {}
+.video_head {position: relative; height: 0; padding-bottom: 63.5%; border-radius: 20px; overflow: hidden; background: #000;}
+.video_head img {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); min-width: 100%; min-height: 100%;}
 .video_body {}
 .video_title {margin-top: 15px; font-size: 20px; font-weight: 600; color: #0f0f0f;}
 .video_date {margin-top: 8px; font-size: 16px; font-weight: 300; color: #666666;}
