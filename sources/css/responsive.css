@@ -248,7 +248,7 @@
 
   /* > 게시판 공통 */
   .board_head {display: flex; align-items: end; flex-direction: row-reverse; justify-content: space-between; margin-bottom: 15px;}
-  .board_sch {position: relative; right: inherit; top: inherit;}
+  .board_sch, .text_sec_1 .board_sch {position: relative; right: inherit; top: inherit;}
   .board_cnt {margin: 0 -14px;}
 
   .view_head {padding: 22px 10px 20px;}
@@ -279,6 +279,7 @@
 } /*@media End*/
 
 @media screen and (max-width:1023px){
+  .contentsWrap {padding-top: 80px;}
   .container {padding-left: 30px; padding-right: 30px;}
 
   /* Header */
@@ -389,6 +390,8 @@
   
   /* > 개요 및 연혁 */
   .gray_txt-1 {font-size: 20px;}
+  
+  .ovv_sec_3 .inner_division .sub_head {position: relative; top: inherit;}
 
   .step_title {font-size: 20px;}
 
@@ -625,7 +628,7 @@
   .gray_txt-3 span {font-size: 14px;}
   .gray_txt-3 p {font-size: 14px;}
 
-  .his_wrap {height: 400px; padding: 20px 0 35px;}
+  .his_wrap {padding: 20px 0 35px;}
   .his_list {display: block;}
   .his_list:not(:last-child) {padding-bottom: 20px;}
   .his_list:before {left: 2px;}
