@@ -52,17 +52,17 @@ $(document).ready(function(){
   
   // (공통) 메뉴 오버
   $('.gnb_ul-dp1 > li').on('mouseenter', function(){
-    $('.gnb_ul-dp2').stop().slideUp();
-    $(this).find('.gnb_ul-dp2').stop().slideDown();
+    $('.gnb_ul-dp2').stop().slideUp(200);
+    $(this).find('.gnb_ul-dp2').stop().slideDown(200);
   });
 
   $('#header').on('mouseleave', function(){
-    $('.gnb_ul-dp2').stop().slideUp();
+    $('.gnb_ul-dp2').stop().slideUp(200);
   });
 
   $('.all_menu-btn').on('click', function(){
     $(this).toggleClass('act');
-    $('.allMenu').slideToggle();
+    $('.allMenu').slideToggle(200);
     
     const screenWidth_in = screen.width;
     if(screenWidth_in < 768) {

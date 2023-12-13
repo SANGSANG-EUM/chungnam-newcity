@@ -360,6 +360,8 @@
   /* Sub */
   .sub_sec {margin-bottom: 60px;}
   .sub_head {margin-bottom: 10px;}
+  .sub_subject br {display: none;}
+  
   .inner_division .sub_head {display: block; width: 100%; margin-bottom: 10px;}
   .inner_division .sub_body {display: block; width: 100%;}
 
